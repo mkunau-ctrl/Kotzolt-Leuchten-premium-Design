@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- Mobile Nav -->
 <nav class="mobile-nav" role="dialog">
   <button class="mobile-close" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--text-primary);">✕</button>
   <a href="index.html"><span data-lang="de">Startseite</span><span data-lang="en">Home</span></a>
@@ -19,6 +20,7 @@
   <a href="kontakt.html"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a>
 </nav>
 
+<!-- Header -->
 <header class="site-header">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
@@ -39,7 +41,7 @@
       <a href="kontakt.html" class="btn-contact">
         <span data-lang="de">Kontakt</span><span data-lang="en">Contact</span>
       </a>
-      <button class="nav-hamburger" aria-label="Menü">
+      <button class="nav-hamburger" aria-label="Menü" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -72,8 +74,44 @@
   </div></div>
 </section>
 
+<!-- Counter Bar -->
+<div class="counter-bar section-sm">
+  <div class="container">
+    <div class="counter-grid scale-up">
+      <div class="counter-item">
+        <span class="counter-num" data-target="12">12</span>
+        <span class="counter-label">
+          <span data-lang="de">Produktfamilien</span>
+          <span data-lang="en">Product families</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="5">5</span>
+        <span class="counter-label">
+          <span data-lang="de">Planus Varianten</span>
+          <span data-lang="en">Planus variants</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="100" data-suffix="%">100%</span>
+        <span class="counter-label">
+          <span data-lang="de">Made in Germany</span>
+          <span data-lang="en">Made in Germany</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="100" data-suffix="%">100%</span>
+        <span class="counter-label">
+          <span data-lang="de">Konfigurierbar</span>
+          <span data-lang="en">Configurable</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Büro / Office — arrow-info list -->
-<section class="section">
+<section class="section" id="buero">
   <div class="container">
     <header class="section-header left fade-in">
       <span class="label">
@@ -89,7 +127,7 @@
 
     <div class="arrow-info-list">
 
-      <!-- Planus -->
+      <!-- → Planus -->
       <div class="arrow-info slide-left">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" alt="Planus – Büro Stehleuchte" loading="lazy"/>
@@ -116,7 +154,7 @@
         </div>
       </div>
 
-      <!-- Planus Duo Line -->
+      <!-- ← Planus Duo Line -->
       <div class="arrow-info reverse slide-right">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1497366754035-f200586c4bd5?auto=format&fit=crop&w=900&q=80" alt="Planus Duo Line – Open Space" loading="lazy"/>
@@ -142,7 +180,7 @@
         </div>
       </div>
 
-      <!-- Lightline -->
+      <!-- → Lightline -->
       <div class="arrow-info slide-left">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80" alt="Lightline – Profilleuchte Präzision" loading="lazy"/>
@@ -172,23 +210,27 @@
   </div>
 </section>
 
-<!-- Parallax Divider -->
-<div class="parallax-divider" style="background-image:url('https://images.unsplash.com/photo-1526374965874-b1b494e95eb2?auto=format&fit=crop&w=1800&q=80');">
-  <div class="parallax-divider-overlay"></div>
-  <div class="parallax-divider-content fade-in">
-    <span class="label" style="color:var(--cold-pale);">
-      <span data-lang="de">Pendelleuchten</span>
-      <span data-lang="en">Pendant luminaires</span>
-    </span>
-    <p class="parallax-divider-quote">
-      <span data-lang="de">„Hängende Eleganz – von minimalistisch bis zeichenhaft"</span>
-      <span data-lang="en">"Suspended elegance – from minimalist to iconic"</span>
-    </p>
+<!-- Parallax Divider – Pendelleuchten -->
+<div class="parallax-divider" style="min-height:400px;">
+  <div class="parallax-divider-bg" data-parallax="0.4" style="background-image:url('https://images.unsplash.com/photo-1526374965874-b1b494e95eb2?auto=format&fit=crop&w=1800&q=80');"></div>
+  <div class="parallax-divider-overlay" style="background:linear-gradient(135deg,rgba(28,25,22,.85) 0%,rgba(58,106,138,.6) 100%);"></div>
+  <div class="container parallax-divider-content">
+    <div style="max-width:680px;" class="fade-in">
+      <span class="label" style="color:var(--cold-pale);display:block;margin-bottom:1rem;">
+        <span data-lang="de">Pendelleuchten</span>
+        <span data-lang="en">Pendant luminaires</span>
+      </span>
+      <blockquote>
+        <span data-lang="de">„Hängende Eleganz – von minimalistisch bis zeichenhaft"</span>
+        <span data-lang="en">"Suspended elegance – from minimalist to iconic"</span>
+        <cite>Kotzolt International GmbH · Lemgo</cite>
+      </blockquote>
+    </div>
   </div>
 </div>
 
 <!-- Pendelleuchten -->
-<section class="section">
+<section class="section" id="pendelleuchten">
   <div class="container">
     <header class="section-header left fade-in">
       <span class="label">
@@ -204,7 +246,7 @@
 
     <div class="arrow-info-list">
 
-      <!-- Aures -->
+      <!-- ← Aures -->
       <div class="arrow-info reverse slide-right">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80" alt="Aures – Runde LED-Pendelleuchte" loading="lazy"/>
@@ -230,7 +272,7 @@
         </div>
       </div>
 
-      <!-- UFO -->
+      <!-- → UFO -->
       <div class="arrow-info slide-left">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&w=900&q=80" alt="UFO – Designpendelleuchte für Hotel und Sakral" loading="lazy"/>
@@ -256,7 +298,7 @@
         </div>
       </div>
 
-      <!-- Sandwich & Flatline -->
+      <!-- ← Sandwich & Flatline -->
       <div class="arrow-info reverse slide-right">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Sandwich und Flatline Pendelleuchten" loading="lazy"/>
@@ -285,23 +327,27 @@
   </div>
 </section>
 
-<!-- Parallax Divider 2 -->
-<div class="parallax-divider" style="background-image:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1800&q=80');">
-  <div class="parallax-divider-overlay"></div>
-  <div class="parallax-divider-content fade-in">
-    <span class="label" style="color:var(--cold-pale);">
-      <span data-lang="de">Spezial &amp; Sonderanfertigungen</span>
-      <span data-lang="en">Special &amp; Custom Solutions</span>
-    </span>
-    <p class="parallax-divider-quote">
-      <span data-lang="de">„Licht ohne Grenzen – maßgefertigt für außergewöhnliche Räume"</span>
-      <span data-lang="en">"Light without limits – custom-made for extraordinary spaces"</span>
-    </p>
+<!-- Parallax Divider – Sonderanfertigungen -->
+<div class="parallax-divider" style="min-height:400px;">
+  <div class="parallax-divider-bg" data-parallax="0.4" style="background-image:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1800&q=80');"></div>
+  <div class="parallax-divider-overlay" style="background:linear-gradient(135deg,rgba(28,25,22,.88) 0%,rgba(58,106,138,.55) 100%);"></div>
+  <div class="container parallax-divider-content">
+    <div style="max-width:680px;" class="fade-in">
+      <span class="label" style="color:var(--cold-pale);display:block;margin-bottom:1rem;">
+        <span data-lang="de">Spezial &amp; Sonderanfertigungen</span>
+        <span data-lang="en">Special &amp; Custom Solutions</span>
+      </span>
+      <blockquote>
+        <span data-lang="de">„Licht ohne Grenzen – maßgefertigt für außergewöhnliche Räume"</span>
+        <span data-lang="en">"Light without limits – custom-made for extraordinary spaces"</span>
+        <cite>Kotzolt International GmbH · Lemgo</cite>
+      </blockquote>
+    </div>
   </div>
 </div>
 
 <!-- Sonder & Speziell -->
-<section class="section">
+<section class="section" id="sonder">
   <div class="container">
     <header class="section-header left fade-in">
       <span class="label">
@@ -317,7 +363,7 @@
 
     <div class="arrow-info-list">
 
-      <!-- Evolution -->
+      <!-- → Evolution -->
       <div class="arrow-info slide-left">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=80" alt="Evolution – Sporthallen-Leuchte" loading="lazy"/>
@@ -332,7 +378,7 @@
           <h3>Evolution</h3>
           <div class="divider"></div>
           <p>
-            <span data-lang="de">Speziell für Sport- und Mehrzweckhallen entwickelt. Evolution bietet höchste Effizienz, langen Lebensdauer und ist für den rauen Sportbetrieb ausgelegt.</span>
+            <span data-lang="de">Speziell für Sport- und Mehrzweckhallen entwickelt. Evolution bietet höchste Effizienz, lange Lebensdauer und ist für den rauen Sportbetrieb ausgelegt.</span>
             <span data-lang="en">Specially developed for sports and multi-purpose halls. Evolution offers maximum efficiency, long service life and is designed for demanding sports use.</span>
           </p>
           <div class="arrow-tags">
@@ -343,7 +389,7 @@
         </div>
       </div>
 
-      <!-- Pictura -->
+      <!-- ← Pictura -->
       <div class="arrow-info reverse slide-right">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80" alt="Pictura – Licht als Kunstform" loading="lazy"/>
@@ -369,7 +415,7 @@
         </div>
       </div>
 
-      <!-- Giro, Squillo & Glaslichtflächen -->
+      <!-- → Giro, Squillo & Glaslichtflächen -->
       <div class="arrow-info slide-left">
         <div class="arrow-info-img">
           <img src="https://images.unsplash.com/photo-1526374965874-b1b494e95eb2?auto=format&fit=crop&w=900&q=80" alt="Giro Squillo Glaslichtflächen neue Produktfamilien" loading="lazy"/>
@@ -400,30 +446,38 @@
 </section>
 
 <!-- CTA with parallax background -->
-<section class="cta-banner section-sm" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center;">
-  <div class="container" style="position:relative;z-index:1;text-align:center;">
+<section class="cta-banner section">
+  <div class="cta-banner-bg" data-parallax="0.3" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80');"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="cta-banner-border"></div>
+  <div class="container cta-banner-content">
     <span class="label fade-in" style="color:var(--cold-pale);">
       <span data-lang="de">Individuelle Anfrage</span>
       <span data-lang="en">Individual inquiry</span>
     </span>
-    <h2 class="fade-in fade-in-delay-1" style="color:var(--white);margin-top:.75rem;margin-bottom:1rem;">
+    <h2 class="fade-in fade-in-delay-1" style="color:var(--white);">
       <span data-lang="de">Nicht das Richtige dabei?</span>
       <span data-lang="en">Didn't find what you need?</span>
     </h2>
-    <p class="fade-in fade-in-delay-2" style="color:rgba(255,255,255,.6);max-width:440px;margin:0 auto 2rem;font-weight:300;">
+    <p class="fade-in fade-in-delay-2" style="color:rgba(255,255,255,.65);max-width:480px;margin:0 auto 2rem;">
       <span data-lang="de">Wir fertigen jede Leuchte nach Ihren Vorgaben. Sprechen Sie uns an.</span>
       <span data-lang="en">We manufacture every luminaire to your specifications. Get in touch.</span>
     </p>
-    <a href="kontakt.html" class="btn btn-gold fade-in fade-in-delay-3">
-      <span data-lang="de">Sonderanfertigung anfragen</span>
-      <span data-lang="en">Request custom solution</span>
-      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-        <path d="M5 12h14M12 5l7 7-7 7"/>
-      </svg>
-    </a>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="fade-in fade-in-delay-3">
+      <a href="kontakt.html" class="btn btn-gold">
+        <span data-lang="de">Sonderanfertigung anfragen</span>
+        <span data-lang="en">Request custom solution</span>
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="referenzen.html" class="btn" style="border:2px solid rgba(90,137,168,.5);color:rgba(255,255,255,.8);">
+        <span data-lang="de">Referenzen ansehen</span>
+        <span data-lang="en">View references</span>
+      </a>
+    </div>
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -432,9 +486,9 @@
         <div class="logo-sub">International GmbH</div>
         <p><span data-lang="de">Hersteller von hochwertiger Beleuchtung und individuellen Lichtlösungen. Made in Germany.</span><span data-lang="en">Manufacturer of high-quality lighting and individual light solutions. Made in Germany.</span></p>
         <div class="footer-social">
-          <a href="#" class="social-icon" aria-label="Instagram">in</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
           <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
-          <a href="https://www.youtube.com/@kotzolt6738" class="social-icon" aria-label="YouTube">▶</a>
+          <a href="https://www.youtube.com/@kotzolt6738" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">▶</a>
           <a href="#" class="social-icon" aria-label="Pinterest">P</a>
         </div>
       </div>
@@ -446,6 +500,7 @@
           <li><a href="produkte.html">Aures</a></li>
           <li><a href="produkte.html">UFO</a></li>
           <li><a href="produkte.html">Evolution</a></li>
+          <li><a href="produkte.html">Pictura</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -454,6 +509,7 @@
           <li><a href="ueber-uns.html"><span data-lang="de">Über uns</span><span data-lang="en">About us</span></a></li>
           <li><a href="leistungen.html"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a></li>
           <li><a href="referenzen.html"><span data-lang="de">Referenzen</span><span data-lang="en">References</span></a></li>
+          <li><a href="kontakt.html"><span data-lang="de">Karriere</span><span data-lang="en">Careers</span></a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -461,6 +517,8 @@
         <ul>
           <li><a href="kontakt.html">Lemgo, Deutschland</a></li>
           <li><a href="kontakt.html"><span data-lang="de">Projektanfrage</span><span data-lang="en">Project inquiry</span></a></li>
+          <li><a href="kontakt.html">Newsletter</a></li>
+          <li><a href="#">WhatsApp</a></li>
         </ul>
       </div>
     </div>
