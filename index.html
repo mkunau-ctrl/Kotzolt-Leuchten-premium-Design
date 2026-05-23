@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <!-- Mobile Nav -->
 <nav class="mobile-nav">
   <button class="mobile-close" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--text-primary);">✕</button>
@@ -132,8 +135,8 @@
   </div>
 </div>
 
-<!-- ═══════════════════ PRODUKTE – PFEIL LAYOUT ══════════════ -->
-<section class="section" id="leuchten">
+<!-- ═══════════════════ PRODUKTE – SLIDER ═════════════════════ -->
+<section class="section" id="leuchten" style="padding-bottom:0;overflow:hidden;">
   <div class="container">
     <header class="section-header fade-in">
       <span class="label">
@@ -145,101 +148,179 @@
         <span data-lang="en">Luminaires for every purpose</span>
       </h2>
       <div class="divider divider-center"></div>
-      <p>
-        <span data-lang="de">Von der Bürobeleuchtung bis zur architektonischen Sonderanfertigung – jede Leuchte entsteht nach Ihren Anforderungen.</span>
-        <span data-lang="en">From office lighting to architectural custom solutions – every luminaire is designed to your requirements.</span>
-      </p>
     </header>
+  </div>
 
-    <div class="arrow-info-list">
+  <div class="product-slider scale-up">
+    <div class="slider-track">
 
-      <!-- → Planus -->
-      <div class="arrow-info slide-left">
-        <div class="arrow-info-img">
-          <img src="https://kotzolt.com/wp-content/uploads/2019/06/Leuchte_Planus.jpg" alt="Planus – Stehleuchte für moderne Büroarbeit" loading="lazy" />
-          <div class="arrow-img-overlay"></div>
+      <!-- 01 Planus -->
+      <div class="slide">
+        <div class="slide-image-wrap">
+          <img src="https://kotzolt.com/wp-content/uploads/2019/06/Leuchte_Planus.jpg" alt="Planus – Stehleuchte" loading="lazy" />
         </div>
-        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
-        <div class="arrow-info-body">
+        <div class="slide-content">
           <span class="label">01 · <span data-lang="de">Stehleuchte</span><span data-lang="en">Floor lamp</span></span>
           <h3>Planus</h3>
-          <div class="divider"></div>
           <p>
-            <span data-lang="de">Flexibles Stehleuchten-System für moderne Büroarbeitsplätze. Ein Planus beleuchtet gleichzeitig bis zu 4 Arbeitsplätze – ideal für agile, offen gestaltete Arbeitswelten. Erhältlich in 5 Varianten inkl. Duo Line.</span>
-            <span data-lang="en">Flexible floor lamp system for modern office workstations. One Planus illuminates up to 4 workstations simultaneously – ideal for agile, open-plan work environments. Available in 5 variants including Duo Line.</span>
+            <span data-lang="de">Flexibles Stehleuchten-System: Ein Planus beleuchtet bis zu 4 Arbeitsplätze gleichzeitig. 5 Varianten inkl. Duo Line. Ideal für agile Bürowelten.</span>
+            <span data-lang="en">Flexible floor lamp system: one Planus illuminates up to 4 workstations simultaneously. 5 variants incl. Duo Line. Ideal for agile office environments.</span>
           </p>
-          <div class="arrow-tags">
+          <div class="arrow-tags" style="margin-top:1rem;">
             <span class="arrow-tag">LED</span>
             <span class="arrow-tag"><span data-lang="de">Büro</span><span data-lang="en">Office</span></span>
-            <span class="arrow-tag"><span data-lang="de">Bis 4 Plätze</span><span data-lang="en">Up to 4 desks</span></span>
             <span class="arrow-tag">Made in Germany</span>
           </div>
-          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
             <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
             <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </div>
 
-      <!-- ← Aures / UFO -->
-      <div class="arrow-info reverse slide-right">
-        <div class="arrow-info-img">
-          <img src="https://kotzolt.com/wp-content/uploads/2019/11/Kopfbild_Ufos.jpg" alt="UFO – Designpendelleuchte" loading="lazy" />
-          <div class="arrow-img-overlay"></div>
+      <!-- 02 Lightline -->
+      <div class="slide">
+        <div class="slide-image-wrap">
+          <img src="https://kotzolt.com/wp-content/uploads/2019/03/Lightline_Hyatt.jpg" alt="Lightline – Lichtbandsystem" loading="lazy" />
         </div>
-        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
-        <div class="arrow-info-body">
-          <span class="label">02 · <span data-lang="de">Pendelleuchten</span><span data-lang="en">Pendant luminaires</span></span>
-          <h3>Aures &amp; UFO</h3>
-          <div class="divider"></div>
+        <div class="slide-content">
+          <span class="label">02 · <span data-lang="de">Lichtband</span><span data-lang="en">Light line</span></span>
+          <h3>Lightline</h3>
           <p>
-            <span data-lang="de">Runde LED-Pendelleuchten (Aures / Aures Slim) und die markante UFO-Designleuchte für Hotels, Lobbys und sakrale Räume. Elegante Formen, warmer Lichtcharakter und maximale Effizienz.</span>
-            <span data-lang="en">Round LED pendant luminaires (Aures / Aures Slim) and the iconic UFO design luminaire for hotels, lobbies and sacred spaces. Elegant forms, warm light quality and maximum efficiency.</span>
+            <span data-lang="de">Modulares Lichtbandsystem für Unterputz- und Aufputzinstallation. Streckenfertig geliefert, minimaler Installationsaufwand. Architektenliebling für Hotels und Lobbys.</span>
+            <span data-lang="en">Modular light line system for flush and surface mount. Delivered ready-to-install, minimal effort. Architects' favourite for hotels and lobbies.</span>
           </p>
-          <div class="arrow-tags">
+          <div class="arrow-tags" style="margin-top:1rem;">
             <span class="arrow-tag">LED</span>
             <span class="arrow-tag">Hotel</span>
-            <span class="arrow-tag"><span data-lang="de">Sakral</span><span data-lang="en">Sacred</span></span>
-            <span class="arrow-tag">Pendant</span>
+            <span class="arrow-tag"><span data-lang="de">Modular</span><span data-lang="en">Modular</span></span>
           </div>
-          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
             <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
             <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </div>
 
-      <!-- → Evolution / Sonder -->
-      <div class="arrow-info slide-left">
-        <div class="arrow-info-img">
-          <img src="https://kotzolt.com/wp-content/uploads/2024/08/Typensporthalle_Berlin-1500x430.jpg" alt="Evolution – Sporthallen-Beleuchtung Berlin" loading="lazy" />
-          <div class="arrow-img-overlay"></div>
+      <!-- 03 Aures -->
+      <div class="slide">
+        <div class="slide-image-wrap">
+          <img src="https://kotzolt.com/wp-content/uploads/2024/08/Stadtwerke_Neubrandenburg_Aures-1500x430.jpg" alt="Aures – Pendelleuchte Stadtwerke" loading="lazy" />
         </div>
-        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
-        <div class="arrow-info-body">
-          <span class="label">03 · <span data-lang="de">Sonderlösungen</span><span data-lang="en">Special solutions</span></span>
-          <h3>Evolution &amp; Pictura</h3>
-          <div class="divider"></div>
+        <div class="slide-content">
+          <span class="label">03 · <span data-lang="de">Pendelleuchte</span><span data-lang="en">Pendant luminaire</span></span>
+          <h3>Aures</h3>
           <p>
-            <span data-lang="de">Evolution: Hocheffiziente Hallenleuchten für Sport und Mehrzweck. Pictura, Giro, Squillo und Glaslichtflächen für architektonisch besondere Aufgaben. Licht als gestaltendes Element.</span>
-            <span data-lang="en">Evolution: highly efficient hall luminaires for sports and multi-purpose use. Pictura, Giro, Squillo and glass light surfaces for architecturally special tasks. Light as a design element.</span>
+            <span data-lang="de">Runde LED-Pendelleuchten in zwei Größen – Aures und Aures Slim. Warmes, dezentes Licht für Büros, Konferenzräume und öffentliche Gebäude.</span>
+            <span data-lang="en">Round LED pendant luminaires in two sizes – Aures and Aures Slim. Warm, subtle light for offices, conference rooms and public buildings.</span>
           </p>
-          <div class="arrow-tags">
+          <div class="arrow-tags" style="margin-top:1rem;">
+            <span class="arrow-tag">LED</span>
+            <span class="arrow-tag"><span data-lang="de">Pendelleuchte</span><span data-lang="en">Pendant</span></span>
+            <span class="arrow-tag">Round</span>
+          </div>
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
+            <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 04 UFO -->
+      <div class="slide">
+        <div class="slide-image-wrap">
+          <img src="https://kotzolt.com/wp-content/uploads/2019/11/Kopfbild_Ufos.jpg" alt="UFO – Designpendelleuchte" loading="lazy" />
+        </div>
+        <div class="slide-content">
+          <span class="label">04 · Design</span>
+          <h3>UFO</h3>
+          <p>
+            <span data-lang="de">Die ikonische UFO-Leuchte – markantes Design für Hotels, Sakralräume und Lobbys. Warm-weißes Licht mit ausgeprägter Charakterwirkung.</span>
+            <span data-lang="en">The iconic UFO luminaire – distinctive design for hotels, sacred spaces and lobbies. Warm white light with strong character effect.</span>
+          </p>
+          <div class="arrow-tags" style="margin-top:1rem;">
+            <span class="arrow-tag">LED</span>
+            <span class="arrow-tag">Design Icon</span>
+            <span class="arrow-tag"><span data-lang="de">Sakral</span><span data-lang="en">Sacred</span></span>
+          </div>
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
+            <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 05 Evolution -->
+      <div class="slide">
+        <div class="slide-image-wrap">
+          <img src="https://kotzolt.com/wp-content/uploads/2024/08/Typensporthalle_Berlin-1500x430.jpg" alt="Evolution – Sporthallen Berlin" loading="lazy" />
+        </div>
+        <div class="slide-content">
+          <span class="label">05 · <span data-lang="de">Halle</span><span data-lang="en">Hall</span></span>
+          <h3>Evolution</h3>
+          <p>
+            <span data-lang="de">Hocheffiziente Hallenleuchten für Sport- und Mehrzweckhallen. Eingesetzt in Berliner Typensportstätten und weiteren Großprojekten deutschlandweit.</span>
+            <span data-lang="en">Highly efficient hall luminaires for sports and multi-purpose halls. Installed in Berlin's type sports facilities and large-scale projects across Germany.</span>
+          </p>
+          <div class="arrow-tags" style="margin-top:1rem;">
             <span class="arrow-tag">LED</span>
             <span class="arrow-tag"><span data-lang="de">Sporthalle</span><span data-lang="en">Sports hall</span></span>
-            <span class="arrow-tag">Design</span>
-            <span class="arrow-tag"><span data-lang="de">Individuell</span><span data-lang="en">Individual</span></span>
+            <span class="arrow-tag">High-bay</span>
           </div>
-          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
             <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
             <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </div>
 
-    </div>
-  </div>
+      <!-- 06 Leuchtensanierung -->
+      <div class="slide">
+        <div class="slide-image-wrap">
+          <img src="https://kotzolt.com/wp-content/uploads/2024/08/Leuchtensanierung_Columnia-1500x430.jpg" alt="Leuchtensanierung – Nachhaltigkeit" loading="lazy" />
+        </div>
+        <div class="slide-content">
+          <span class="label">06 · <span data-lang="de">Sanierung</span><span data-lang="en">Renovation</span></span>
+          <h3><span data-lang="de">Leuchtensanierung</span><span data-lang="en">Luminaire Renovation</span></h3>
+          <p>
+            <span data-lang="de">Das Innenleben wechselt, der Leuchtenkorpus bleibt. Nachhaltige Modernisierung auf LED-Technologie – ressourcenschonend, wirtschaftlich und DGNB-konform.</span>
+            <span data-lang="en">The inside changes, the housing remains. Sustainable modernisation to LED – resource-efficient, economical and DGNB-compliant.</span>
+          </p>
+          <div class="arrow-tags" style="margin-top:1rem;">
+            <span class="arrow-tag">Nachhaltigkeit</span>
+            <span class="arrow-tag">LED Retrofit</span>
+            <span class="arrow-tag">DGNB</span>
+          </div>
+          <a href="leistungen.html" class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
+            <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /.slider-track -->
+
+    <!-- Controls -->
+    <button class="slider-btn prev" aria-label="Vorheriges">&#8592;</button>
+    <button class="slider-btn next" aria-label="Nächstes">&#8594;</button>
+    <div class="slider-dots"></div>
+    <div class="slider-counter">1 / 6</div>
+  </div><!-- /.product-slider -->
 </section>
+
+<!-- ═══════════════════ PARALLAX STRIP – QUALITÄT ════════════ -->
+<div class="parallax-strip">
+  <div class="parallax-strip-bg" data-parallax="0.3"
+    style="background-image:url('https://kotzolt.com/wp-content/uploads/2024/08/CIIT_Paderborn-1500x430.jpg');"></div>
+  <div class="parallax-strip-overlay"></div>
+  <div class="parallax-strip-content container">
+    <span class="label fade-in"><span data-lang="de">Qualität</span><span data-lang="en">Quality</span></span>
+    <p class="fade-in" style="font-size:1.3rem;font-family:var(--font-serif);font-style:italic;color:#fff;max-width:640px;margin:0 auto;">
+      <span data-lang="de">„100 % deutsche Zulieferer. Jede Leuchte nach Maß."</span>
+      <span data-lang="en">"100 % German suppliers. Every luminaire made to measure."</span>
+    </p>
+  </div>
+</div>
 
 <!-- ═══════════════════ PARALLAX – PHILOSOPHIE ═══════════════ -->
 <div class="parallax-divider" style="min-height:480px;">

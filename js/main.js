@@ -1,4 +1,4 @@
-/* Kotzolt — Premium Design v2 · JS */
+/* Kotzolt — Premium Design v3 · JS */
 (function () {
   'use strict';
 
@@ -17,6 +17,19 @@
     btn.addEventListener('click', () => setLang(btn.dataset.lang))
   );
   setLang(localStorage.getItem(STORAGE) || 'de');
+
+  /* ── Scroll Progress Bar ──────────────────────────────────── */
+  const progressBar = document.getElementById('scrollProgress');
+  if (progressBar) {
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = pct + '%';
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
 
   /* ── Sticky Header ────────────────────────────────────────── */
   const header = document.querySelector('.site-header');
@@ -73,9 +86,8 @@
   });
 
   function doParallax() {
-    const sy = window.scrollY;
     parallaxEls.forEach(({ el, speed }) => {
-      const parent = el.closest('.hero, .parallax-divider, .cta-banner');
+      const parent = el.closest('.hero, .parallax-divider, .cta-banner, .parallax-strip');
       if (!parent) return;
       const rect   = parent.getBoundingClientRect();
       const center = rect.top + rect.height / 2 - window.innerHeight / 2;
@@ -144,5 +156,78 @@
       }, 3500);
     });
   }
+
+  /* ── Product Slider (FORMATIO-style) ──────────────────────── */
+  class ProductSlider {
+    constructor(el) {
+      this.el       = el;
+      this.track    = el.querySelector('.slider-track');
+      this.slides   = Array.from(el.querySelectorAll('.slide'));
+      this.btnPrev  = el.querySelector('.slider-btn.prev');
+      this.btnNext  = el.querySelector('.slider-btn.next');
+      this.dotsWrap = el.querySelector('.slider-dots');
+      this.counter  = el.querySelector('.slider-counter');
+      this.current  = 0;
+      this.total    = this.slides.length;
+      this.autoTimer = null;
+      this.touchStartX = 0;
+
+      if (!this.track || !this.total) return;
+      this._buildDots();
+      this._bind();
+      this._goto(0, false);
+      this._startAuto();
+    }
+
+    _buildDots() {
+      if (!this.dotsWrap) return;
+      this.dotsWrap.innerHTML = '';
+      this.slides.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'sdot';
+        d.setAttribute('aria-label', 'Slide ' + (i + 1));
+        d.addEventListener('click', () => { this._goto(i); this._resetAuto(); });
+        this.dotsWrap.appendChild(d);
+      });
+      this.dots = Array.from(this.dotsWrap.querySelectorAll('.sdot'));
+    }
+
+    _bind() {
+      if (this.btnPrev) this.btnPrev.addEventListener('click', () => { this._prev(); this._resetAuto(); });
+      if (this.btnNext) this.btnNext.addEventListener('click', () => { this._next(); this._resetAuto(); });
+
+      this.track.addEventListener('touchstart', e => {
+        this.touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      this.track.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - this.touchStartX;
+        if (Math.abs(dx) > 40) { dx < 0 ? this._next() : this._prev(); this._resetAuto(); }
+      }, { passive: true });
+    }
+
+    _goto(idx, animate = true) {
+      this.current = (idx + this.total) % this.total;
+      if (!animate) this.track.style.transition = 'none';
+      this.track.style.transform = `translateX(-${this.current * 100}%)`;
+      if (!animate) setTimeout(() => this.track.style.transition = '', 20);
+
+      this.slides.forEach((s, i) => s.classList.toggle('active', i === this.current));
+      if (this.dots) this.dots.forEach((d, i) => d.classList.toggle('active', i === this.current));
+      if (this.counter) this.counter.textContent = (this.current + 1) + ' / ' + this.total;
+    }
+
+    _next() { this._goto(this.current + 1); }
+    _prev() { this._goto(this.current - 1); }
+
+    _startAuto() {
+      this.autoTimer = setInterval(() => this._next(), 5000);
+    }
+    _resetAuto() {
+      clearInterval(this.autoTimer);
+      this._startAuto();
+    }
+  }
+
+  document.querySelectorAll('.product-slider').forEach(el => new ProductSlider(el));
 
 })();
