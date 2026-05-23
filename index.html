@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kotzolt International GmbH — Beleuchtung & individuelle Lichtlösungen</title>
+  <title>Kotzolt International GmbH — Beleuchtung &amp; individuelle Lichtlösungen</title>
   <meta name="description" content="Kotzolt International GmbH – Hersteller von hochwertiger Beleuchtung und individuellen Lichtlösungen. Made in Germany, Lemgo." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ── Mobile Nav ─────────────────────────────────────────── -->
-<nav class="mobile-nav" role="dialog" aria-label="Hauptmenü">
-  <button class="mobile-close" aria-label="Schließen" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--text-primary);">✕</button>
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <button class="mobile-close" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--text-primary);">✕</button>
   <a href="index.html"><span data-lang="de">Startseite</span><span data-lang="en">Home</span></a>
   <a href="produkte.html"><span data-lang="de">Leuchten</span><span data-lang="en">Products</span></a>
   <a href="leistungen.html"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a>
@@ -20,73 +20,74 @@
   <a href="kontakt.html"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a>
 </nav>
 
-<!-- ── Header ─────────────────────────────────────────────── -->
+<!-- Header -->
 <header class="site-header">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo" aria-label="Kotzolt Startseite">
+    <a href="index.html" class="nav-logo">
       <span class="logo-name">Kotzolt</span>
       <span class="logo-tagline">International GmbH</span>
     </a>
-
-    <nav class="nav-links" aria-label="Hauptnavigation">
+    <nav class="nav-links">
       <a href="produkte.html"><span data-lang="de">Leuchten</span><span data-lang="en">Products</span></a>
       <a href="leistungen.html"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a>
       <a href="referenzen.html"><span data-lang="de">Referenzen</span><span data-lang="en">References</span></a>
       <a href="ueber-uns.html"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a>
     </nav>
-
     <div class="nav-right">
-      <div class="lang-switch" role="group" aria-label="Sprache wählen">
+      <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
       <a href="kontakt.html" class="btn-contact">
-        <span data-lang="de">Kontakt</span>
-        <span data-lang="en">Contact</span>
+        <span data-lang="de">Kontakt</span><span data-lang="en">Contact</span>
       </a>
-      <button class="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false">
+      <button class="nav-hamburger" aria-label="Menü" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<!-- ── Hero ───────────────────────────────────────────────── -->
-<section class="hero section-lg">
-  <div class="light-orb orb-1"></div>
-  <div class="light-orb orb-2"></div>
+<!-- ═══════════════════ HERO ═════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-parallax-bg" data-parallax="0.45"></div>
+  <div class="hero-overlay"></div>
 
   <div class="container">
     <div class="hero-content">
-      <span class="label fade-in">
+      <span class="label slide-left">
         <span data-lang="de">Licht. Qualität. Nachhaltigkeit.</span>
         <span data-lang="en">Light. Quality. Sustainability.</span>
       </span>
-
-      <h1 class="fade-in fade-in-delay-1">
+      <h1 class="slide-left fade-in-delay-1">
         <span data-lang="de">Licht, das<br><em>Räume</em> verwandelt</span>
         <span data-lang="en">Light that<br><em>transforms</em> spaces</span>
       </h1>
-
-      <p class="hero-lead fade-in fade-in-delay-2">
-        <span data-lang="de">Kotzolt International GmbH – Ihr Spezialist für hochwertige Beleuchtungslösungen und individuelle Lichtkonzepte. Made in Germany, entwickelt in Lemgo.</span>
-        <span data-lang="en">Kotzolt International GmbH – your specialist for high-quality lighting solutions and individual light concepts. Made in Germany, developed in Lemgo.</span>
+      <p class="hero-lead slide-left fade-in-delay-2">
+        <span data-lang="de">Kotzolt International GmbH – Ihr Spezialist für hochwertige Beleuchtungslösungen und individuelle Lichtkonzepte. Ausschließlich deutsche Zulieferer. Produziert in Lemgo.</span>
+        <span data-lang="en">Kotzolt International GmbH – your specialist for premium lighting solutions and individual light concepts. Exclusively German suppliers. Produced in Lemgo.</span>
       </p>
-
-      <div class="hero-cta fade-in fade-in-delay-3">
+      <div class="hero-cta slide-left fade-in-delay-3">
         <a href="produkte.html" class="btn btn-primary">
           <span data-lang="de">Leuchten entdecken</span>
           <span data-lang="en">Discover Products</span>
-          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="kontakt.html" class="btn btn-outline">
+        <a href="kontakt.html" class="btn btn-cold">
           <span data-lang="de">Projektanfrage</span>
           <span data-lang="en">Project Inquiry</span>
         </a>
       </div>
     </div>
+  </div>
+
+  <!-- Badge -->
+  <div class="hero-badge slide-right fade-in-delay-2">
+    <span class="badge-num">100%</span>
+    <span class="badge-label">
+      <span data-lang="de">Made in Germany</span>
+      <span data-lang="en">Made in Germany</span>
+    </span>
   </div>
 
   <div class="hero-scroll" aria-hidden="true">
@@ -95,7 +96,43 @@
   </div>
 </section>
 
-<!-- ── Featured Products ───────────────────────────────────── -->
+<!-- ═══════════════════ COUNTER BAR ══════════════════════════ -->
+<div class="counter-bar section-sm">
+  <div class="container">
+    <div class="counter-grid scale-up">
+      <div class="counter-item">
+        <span class="counter-num" data-target="100" data-suffix="%">100%</span>
+        <span class="counter-label">
+          <span data-lang="de">Deutsche Komponenten</span>
+          <span data-lang="en">German components</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="12">12</span>
+        <span class="counter-label">
+          <span data-lang="de">Produktfamilien</span>
+          <span data-lang="en">Product families</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="5">5</span>
+        <span class="counter-label">
+          <span data-lang="de">Länder · Referenzen</span>
+          <span data-lang="en">Countries · References</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="2100">2100</span>
+        <span class="counter-label">
+          <span data-lang="de">Meter Glasfaserkabel (Jerusalem)</span>
+          <span data-lang="en">Metres fiber optic (Jerusalem)</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ PRODUKTE – PFEIL LAYOUT ══════════════ -->
 <section class="section" id="leuchten">
   <div class="container">
     <header class="section-header fade-in">
@@ -114,163 +151,113 @@
       </p>
     </header>
 
-    <div class="products-grid">
+    <div class="arrow-info-list">
 
-      <div class="product-card fade-in">
-        <div class="product-number">01</div>
-        <h3>Planus</h3>
-        <p>
-          <span data-lang="de">Flexibles Stehleuchten-System für moderne Büroarbeitsplätze. Leuchtet gleichzeitig bis zu 4 Arbeitsplätze aus – ideal für agile Arbeitswelten.</span>
-          <span data-lang="en">Flexible floor lamp system for modern office workstations. Illuminates up to 4 workplaces simultaneously – ideal for agile work environments.</span>
-        </p>
-        <span class="product-tag">
-          <span data-lang="de">Büro</span>
-          <span data-lang="en">Office</span>
-        </span>
+      <!-- → Planus -->
+      <div class="arrow-info slide-left">
+        <div class="arrow-info-img">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200586c4bd5?auto=format&fit=crop&w=900&q=80" alt="Planus Stehleuchte Büro" loading="lazy" />
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">01 · <span data-lang="de">Stehleuchte</span><span data-lang="en">Floor lamp</span></span>
+          <h3>Planus</h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Flexibles Stehleuchten-System für moderne Büroarbeitsplätze. Ein Planus beleuchtet gleichzeitig bis zu 4 Arbeitsplätze – ideal für agile, offen gestaltete Arbeitswelten. Erhältlich in 5 Varianten inkl. Duo Line.</span>
+            <span data-lang="en">Flexible floor lamp system for modern office workstations. One Planus illuminates up to 4 workstations simultaneously – ideal for agile, open-plan work environments. Available in 5 variants including Duo Line.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">LED</span>
+            <span class="arrow-tag"><span data-lang="de">Büro</span><span data-lang="en">Office</span></span>
+            <span class="arrow-tag"><span data-lang="de">Bis 4 Plätze</span><span data-lang="en">Up to 4 desks</span></span>
+            <span class="arrow-tag">Made in Germany</span>
+          </div>
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+            <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="product-card fade-in fade-in-delay-1">
-        <div class="product-number">02</div>
-        <h3>Lightline</h3>
-        <p>
-          <span data-lang="de">Profilleuchten-System in verschiedenen Ausführungen. Lightline LENS für präzise Lichtlenkung in Arbeits- und Präsentationsräumen.</span>
-          <span data-lang="en">Profile lighting system in various configurations. Lightline LENS for precise light direction in workspaces and presentation rooms.</span>
-        </p>
-        <span class="product-tag">
-          <span data-lang="de">Profil</span>
-          <span data-lang="en">Profile</span>
-        </span>
+      <!-- ← Aures / UFO -->
+      <div class="arrow-info reverse slide-right">
+        <div class="arrow-info-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Aures UFO Pendelleuchte" loading="lazy" />
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">02 · <span data-lang="de">Pendelleuchten</span><span data-lang="en">Pendant luminaires</span></span>
+          <h3>Aures &amp; UFO</h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Runde LED-Pendelleuchten (Aures / Aures Slim) und die markante UFO-Designleuchte für Hotels, Lobbys und sakrale Räume. Elegante Formen, warmer Lichtcharakter und maximale Effizienz.</span>
+            <span data-lang="en">Round LED pendant luminaires (Aures / Aures Slim) and the iconic UFO design luminaire for hotels, lobbies and sacred spaces. Elegant forms, warm light quality and maximum efficiency.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">LED</span>
+            <span class="arrow-tag">Hotel</span>
+            <span class="arrow-tag"><span data-lang="de">Sakral</span><span data-lang="en">Sacred</span></span>
+            <span class="arrow-tag">Pendant</span>
+          </div>
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+            <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="product-card fade-in fade-in-delay-2">
-        <div class="product-number">03</div>
-        <h3>Aures</h3>
-        <p>
-          <span data-lang="de">Runde LED-Pendelleuchten in Standard- und Slim-Ausführung. Elegante Formensprache trifft auf höchste Effizienz.</span>
-          <span data-lang="en">Round LED pendant luminaires in standard and slim variants. Elegant design meets maximum efficiency.</span>
-        </p>
-        <span class="product-tag">
-          <span data-lang="de">Pendant</span>
-          <span data-lang="en">Pendant</span>
-        </span>
+      <!-- → Evolution / Sonder -->
+      <div class="arrow-info slide-left">
+        <div class="arrow-info-img">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=80" alt="Evolution Sporthalle" loading="lazy" />
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">03 · <span data-lang="de">Sonderlösungen</span><span data-lang="en">Special solutions</span></span>
+          <h3>Evolution &amp; Pictura</h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Evolution: Hocheffiziente Hallenleuchten für Sport und Mehrzweck. Pictura, Giro, Squillo und Glaslichtflächen für architektonisch besondere Aufgaben. Licht als gestaltendes Element.</span>
+            <span data-lang="en">Evolution: highly efficient hall luminaires for sports and multi-purpose use. Pictura, Giro, Squillo and glass light surfaces for architecturally special tasks. Light as a design element.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">LED</span>
+            <span class="arrow-tag"><span data-lang="de">Sporthalle</span><span data-lang="en">Sports hall</span></span>
+            <span class="arrow-tag">Design</span>
+            <span class="arrow-tag"><span data-lang="de">Individuell</span><span data-lang="en">Individual</span></span>
+          </div>
+          <a href="produkte.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+            <span data-lang="de">Mehr erfahren</span><span data-lang="en">Learn more</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="product-card fade-in">
-        <div class="product-number">04</div>
-        <h3>UFO</h3>
-        <p>
-          <span data-lang="de">Designpendelleuchte für Hotels, Lobbys und sakrale Räume. Markante Silhouette mit warmem, atmosphärischem Lichtcharakter.</span>
-          <span data-lang="en">Design pendant luminaire for hotels, lobbies, and sacred spaces. Distinctive silhouette with warm, atmospheric light character.</span>
-        </p>
-        <span class="product-tag">
-          <span data-lang="de">Architektur</span>
-          <span data-lang="en">Architecture</span>
-        </span>
-      </div>
-
-      <div class="product-card fade-in fade-in-delay-1">
-        <div class="product-number">05</div>
-        <h3>Evolution</h3>
-        <p>
-          <span data-lang="de">Speziell entwickelt für Sport- und Mehrzweckhallen. Hocheffiziente LED-Technologie, robust und wartungsarm.</span>
-          <span data-lang="en">Specially developed for sports and multi-purpose halls. Highly efficient LED technology, robust and low-maintenance.</span>
-        </p>
-        <span class="product-tag">
-          <span data-lang="de">Sport</span>
-          <span data-lang="en">Sports</span>
-        </span>
-      </div>
-
-      <div class="product-card fade-in fade-in-delay-2">
-        <div class="product-number">06</div>
-        <h3>Pictura &amp; mehr</h3>
-        <p>
-          <span data-lang="de">Kreative Lichtlösungen für besondere Räume: Sandwich, Flatline, Giro, Squillo und Glaslichtflächen – Licht als Gestaltungselement.</span>
-          <span data-lang="en">Creative lighting for special spaces: Sandwich, Flatline, Giro, Squillo and glass light surfaces – light as a design element.</span>
-        </p>
-        <span class="product-tag">
-          <span data-lang="de">Design</span>
-          <span data-lang="en">Design</span>
-        </span>
-      </div>
-
-    </div>
-
-    <div style="text-align:center;margin-top:3rem;" class="fade-in">
-      <a href="produkte.html" class="btn btn-outline">
-        <span data-lang="de">Alle Leuchten ansehen</span>
-        <span data-lang="en">View all Products</span>
-        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
     </div>
   </div>
 </section>
 
-<!-- ── Philosophy ──────────────────────────────────────────── -->
-<section class="philosophy section">
-  <div class="container">
-    <div class="philosophy-inner">
-      <div class="fade-in">
-        <span class="label" style="margin-bottom:1.5rem;display:block;">
-          <span data-lang="de">Unsere Philosophie</span>
-          <span data-lang="en">Our Philosophy</span>
-        </span>
-        <blockquote>
-          <span data-lang="de">„Nicht unsere Leuchte bestimmt Ihre Planung – sondern umgekehrt."</span>
-          <span data-lang="en">"Not our luminaire determines your planning – but the other way around."</span>
-          <cite>Kotzolt International GmbH</cite>
-        </blockquote>
-        <div class="divider" style="margin-top:2rem;"></div>
-        <p style="color:var(--text-secondary);font-size:.9rem;font-weight:300;line-height:1.75;margin-top:1.5rem;">
-          <span data-lang="de">Das Innenleben wechselt, der Leuchtenkorpus bleibt – unser Ansatz der nachhaltigen Modernisierung schont Ressourcen und senkt Kosten dauerhaft.</span>
-          <span data-lang="en">The inside changes, the housing remains – our sustainable modernization approach preserves resources and reduces costs permanently.</span>
-        </p>
-        <a href="ueber-uns.html" class="btn btn-outline" style="margin-top:2rem;display:inline-flex;">
-          <span data-lang="de">Mehr über uns</span>
-          <span data-lang="en">Learn more</span>
-        </a>
-      </div>
-
-      <div class="philosophy-facts fade-in fade-in-delay-2">
-        <div class="fact-item">
-          <h4>100%</h4>
-          <p>
-            <span data-lang="de">Deutsche Zulieferer und Komponenten</span>
-            <span data-lang="en">German suppliers and components</span>
-          </p>
-        </div>
-        <div class="fact-item">
-          <h4>
-            <span data-lang="de">Lemgo</span>
-            <span data-lang="en">Lemgo</span>
-          </h4>
-          <p>
-            <span data-lang="de">Produktionsstandort in Deutschland</span>
-            <span data-lang="en">Production site in Germany</span>
-          </p>
-        </div>
-        <div class="fact-item">
-          <h4>LED</h4>
-          <p>
-            <span data-lang="de">Höchste Energieeffizienz in allen Produkten</span>
-            <span data-lang="en">Maximum energy efficiency in all products</span>
-          </p>
-        </div>
-        <div class="fact-item">
-          <h4>∞</h4>
-          <p>
-            <span data-lang="de">Individuell konfigurierbar nach Ihren Wünschen</span>
-            <span data-lang="en">Individually configurable to your specifications</span>
-          </p>
-        </div>
-      </div>
+<!-- ═══════════════════ PARALLAX – PHILOSOPHIE ═══════════════ -->
+<div class="parallax-divider" style="min-height:480px;">
+  <div class="parallax-divider-bg" data-parallax="0.4"
+    style="background-image:url('https://images.unsplash.com/photo-1526374965874-b1b494e95eb2?auto=format&fit=crop&w=1800&q=80');"></div>
+  <div class="parallax-divider-overlay" style="background:linear-gradient(135deg,rgba(28,25,22,.85) 0%,rgba(58,106,138,.6) 100%);"></div>
+  <div class="container parallax-divider-content">
+    <div style="max-width:740px;" class="fade-in">
+      <blockquote>
+        <span data-lang="de">„Nicht unsere Leuchte bestimmt Ihre Planung – sondern umgekehrt."</span>
+        <span data-lang="en">"Not our luminaire determines your planning – but the other way around."</span>
+        <cite>Kotzolt International GmbH · Lemgo</cite>
+      </blockquote>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ── References teaser ───────────────────────────────────── -->
+<!-- ═══════════════════ REFERENZEN – PFEIL LAYOUT ════════════ -->
 <section class="section" id="referenzen">
   <div class="container">
     <header class="section-header fade-in">
@@ -283,83 +270,70 @@
         <span data-lang="en">Light at work worldwide</span>
       </h2>
       <div class="divider divider-center"></div>
-      <p>
-        <span data-lang="de">Von Berliner Universitäten bis zur Grabeskirche in Jerusalem – unsere Lichtlösungen überzeugen international.</span>
-        <span data-lang="en">From Berlin universities to the Church of the Holy Sepulchre in Jerusalem – our lighting solutions impress internationally.</span>
-      </p>
     </header>
 
-    <div class="references-grid">
+    <div class="arrow-info-list">
 
-      <div class="ref-card fade-in">
-        <div class="ref-card-visual">
-          <span class="ref-icon">✝</span>
+      <!-- ← Jerusalem -->
+      <div class="arrow-info reverse slide-right">
+        <div class="arrow-info-img" style="position:relative;">
+          <img src="https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&w=900&q=80" alt="Grabeskirche Jerusalem" loading="lazy" class="ref-visual-img" />
+          <div class="ref-location-badge">Jerusalem · Israel</div>
+          <div class="arrow-img-overlay"></div>
         </div>
-        <div class="ref-card-body">
-          <span class="label">
-            <span data-lang="de">Jerusalem</span>
-            <span data-lang="en">Jerusalem</span>
-          </span>
-          <h3>
-            <span data-lang="de">Grabeskirche Jerusalem</span>
-            <span data-lang="en">Church of the Holy Sepulchre</span>
-          </h3>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label"><span data-lang="de">Sakralbau</span><span data-lang="en">Sacred building</span></span>
+          <h3><span data-lang="de">Grabeskirche Jerusalem</span><span data-lang="en">Church of the Holy Sepulchre</span></h3>
+          <div class="divider divider-cold"></div>
           <p>
-            <span data-lang="de">Das neue Lichtkreuz der Grabeskirche – ausgestattet mit einem Lichtleitersystem aus 2.100 Metern Glasfaserkabel, das ein über fünf Meter hohes Kreuz von innen heraus beleuchtet.</span>
-            <span data-lang="en">The new light cross of the Holy Sepulchre – equipped with a fiber optic system using 2,100 meters of glass fiber cable, illuminating a cross over five meters tall from within.</span>
+            <span data-lang="de">Das neue Lichtkreuz der Grabeskirche – ausgestattet mit 2.100 Metern Glasfaserkabel, das ein über fünf Meter hohes Kreuz von innen heraus beleuchtet. Eine technische Meisterleistung im Dienst der Sakralarchitektur.</span>
+            <span data-lang="en">The new light cross of the Holy Sepulchre – equipped with 2,100 metres of glass fibre cable illuminating a five-metre cross from within. A technical masterpiece in service of sacred architecture.</span>
           </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">HELIOS</span>
+            <span class="arrow-tag">2.100 m</span>
+            <span class="arrow-tag"><span data-lang="de">Glasfaser</span><span data-lang="en">Fibre optic</span></span>
+          </div>
         </div>
       </div>
 
-      <div class="ref-card fade-in fade-in-delay-1">
-        <div class="ref-card-visual">
-          <span class="ref-icon">📚</span>
+      <!-- → British Museum -->
+      <div class="arrow-info slide-left">
+        <div class="arrow-info-img" style="position:relative;">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80" alt="King's Library British Museum London" loading="lazy" class="ref-visual-img" />
+          <div class="ref-location-badge">London · United Kingdom</div>
+          <div class="arrow-img-overlay"></div>
         </div>
-        <div class="ref-card-body">
-          <span class="label">Berlin</span>
-          <h3>
-            <span data-lang="de">Silberlaube – FU Berlin</span>
-            <span data-lang="en">Silberlaube – FU Berlin</span>
-          </h3>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">Museum</span>
+          <h3>King's Library – British Museum</h3>
+          <div class="divider divider-cold"></div>
           <p>
-            <span data-lang="de">Individuelle Tischleuchten für die Arbeitsflächen der Freien Universität Berlin. Schwenkbarer Kopf bis 90° und integrierte Steckdosen im Leuchtenfuß.</span>
-            <span data-lang="en">Custom desk luminaires for the workstations of Freie Universität Berlin. Swivel head up to 90° and integrated power outlets in the base.</span>
+            <span data-lang="de">Beleuchtungslösung für den 96-Meter-Saal des British Museum in London mit verglasten Bücherregalen. Das HELIOS-Lichtwellenleitersystem erzeugt warmes, konservierungsgerechtes Licht bei 3.000 K.</span>
+            <span data-lang="en">Lighting for the 96-metre King's Library hall of the British Museum, London. The HELIOS fibre optic system generates warm, conservation-friendly light at 3,000 K.</span>
           </p>
-        </div>
-      </div>
-
-      <div class="ref-card fade-in fade-in-delay-2">
-        <div class="ref-card-visual">
-          <span class="ref-icon">🏛️</span>
-        </div>
-        <div class="ref-card-body">
-          <span class="label">London</span>
-          <h3>
-            <span data-lang="de">King's Library – British Museum</span>
-            <span data-lang="en">King's Library – British Museum</span>
-          </h3>
-          <p>
-            <span data-lang="de">Beleuchtung für den 96-Meter-Saal des British Museum mit verglasten Bücherregalen. HELIOS-Lichtwellenleitersystem mit warmem Licht (3.000 K).</span>
-            <span data-lang="en">Lighting for the 96-meter hall of the British Museum with glass-fronted bookshelves. HELIOS fiber optic system with warm light (3,000 K).</span>
-          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">HELIOS</span>
+            <span class="arrow-tag">3.000 K</span>
+            <span class="arrow-tag">96 m</span>
+          </div>
         </div>
       </div>
 
     </div>
 
-    <div style="text-align:center;margin-top:3rem;" class="fade-in">
+    <div style="text-align:center;margin-top:2.5rem;" class="fade-in">
       <a href="referenzen.html" class="btn btn-outline">
-        <span data-lang="de">Alle Referenzen entdecken</span>
-        <span data-lang="en">Discover all references</span>
-        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
+        <span data-lang="de">Alle Referenzen</span><span data-lang="en">All References</span>
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ── Services Overview ───────────────────────────────────── -->
+<!-- ═══════════════════ LEISTUNGEN ═══════════════════════════ -->
 <section class="section" style="background:var(--bg-warm);">
   <div class="container">
     <header class="section-header fade-in">
@@ -375,130 +349,97 @@
     </header>
 
     <div class="services-list">
-      <div class="service-item fade-in">
+      <div class="service-item slide-left">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         </div>
-        <h3>
-          <span data-lang="de">Leuchtenverkauf &amp; Beratung</span>
-          <span data-lang="en">Luminaire Sales &amp; Consulting</span>
-        </h3>
+        <h3><span data-lang="de">Leuchtenverkauf &amp; Beratung</span><span data-lang="en">Sales &amp; Consulting</span></h3>
         <p>
-          <span data-lang="de">Individuelle Beratung für Ihr Lichtprojekt. Wir analysieren Ihre Anforderungen und entwickeln die optimale Lösung – vom Entwurf bis zur Umsetzung.</span>
-          <span data-lang="en">Individual consultation for your lighting project. We analyze your requirements and develop the optimal solution – from concept to implementation.</span>
+          <span data-lang="de">Individuelle Beratung für Ihr Lichtprojekt – vom ersten Konzept bis zur fertigen Installation. Jede Leuchte konfigurierbar nach Ihren Vorgaben.</span>
+          <span data-lang="en">Individual consultation for your lighting project – from first concept to finished installation. Every luminaire configurable to your specifications.</span>
         </p>
       </div>
-
-      <div class="service-item fade-in fade-in-delay-1">
+      <div class="service-item slide-right">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
-        <h3>
-          <span data-lang="de">Leuchtensanierung</span>
-          <span data-lang="en">Luminaire Renovation</span>
-        </h3>
+        <h3><span data-lang="de">Leuchtensanierung</span><span data-lang="en">Luminaire Renovation</span></h3>
         <p>
-          <span data-lang="de">Das Innenleben wechselt, der Leuchtenkorpus bleibt. Nachhaltige Modernisierung bestehender Anlagen auf LED-Technologie – ressourcenschonend und wirtschaftlich.</span>
-          <span data-lang="en">The inside changes, the housing remains. Sustainable modernization of existing installations to LED technology – resource-efficient and economical.</span>
+          <span data-lang="de">Das Innenleben wechselt, der Leuchtenkorpus bleibt. Nachhaltige Modernisierung auf LED – ressourcenschonend und wirtschaftlich.</span>
+          <span data-lang="en">The inside changes, the housing remains. Sustainable modernisation to LED – resource-efficient and economical.</span>
         </p>
       </div>
-
-      <div class="service-item fade-in fade-in-delay-2">
+      <div class="service-item slide-left">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <h3>
-          <span data-lang="de">Individuelle Lichtlösungen</span>
-          <span data-lang="en">Individual Lighting Solutions</span>
-        </h3>
+        <h3><span data-lang="de">Individuelle Lichtlösungen</span><span data-lang="en">Custom Solutions</span></h3>
         <p>
-          <span data-lang="de">Spezialanfertigungen für einzigartige architektonische Anforderungen. Glaslichtflächen, Sondermaße, besondere Materialien – Licht nach Maß.</span>
-          <span data-lang="en">Custom-made solutions for unique architectural requirements. Glass light surfaces, special dimensions, special materials – bespoke light.</span>
+          <span data-lang="de">Glaslichtflächen, Sondermaße, Spezialwerkstoffe – Licht als einzigartiges Gestaltungselement für außergewöhnliche Räume.</span>
+          <span data-lang="en">Glass light surfaces, special dimensions, special materials – light as a unique design element for extraordinary spaces.</span>
         </p>
       </div>
-
-      <div class="service-item fade-in fade-in-delay-3">
+      <div class="service-item slide-right">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>
-          <span data-lang="de">Energieeffizienz &amp; Nachhaltigkeit</span>
-          <span data-lang="en">Energy Efficiency &amp; Sustainability</span>
-        </h3>
+        <h3><span data-lang="de">Energieeffizienz &amp; Nachhaltigkeit</span><span data-lang="en">Efficiency &amp; Sustainability</span></h3>
         <p>
           <span data-lang="de">Ausschließlich deutsche Zulieferer und Komponenten. LED-Technologie für minimalen Energieverbrauch und maximale Lebensdauer.</span>
-          <span data-lang="en">Exclusively German suppliers and components. LED technology for minimal energy consumption and maximum service life.</span>
+          <span data-lang="en">Exclusively German suppliers and components. LED technology for minimal energy use and maximum service life.</span>
         </p>
       </div>
     </div>
-
-    <div style="text-align:center;margin-top:3rem;" class="fade-in">
-      <a href="leistungen.html" class="btn btn-primary">
-        <span data-lang="de">Alle Leistungen</span>
-        <span data-lang="en">All Services</span>
-        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
   </div>
 </section>
 
-<!-- ── CTA ─────────────────────────────────────────────────── -->
+<!-- ═══════════════════ PARALLAX – CTA ═══════════════════════ -->
 <section class="cta-banner section">
-  <div class="container" style="position:relative;z-index:1;text-align:center;">
+  <div class="cta-banner-bg" data-parallax="0.3"
+    style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1800&q=80');"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="cta-banner-border"></div>
+  <div class="container cta-banner-content">
     <span class="label fade-in">
-      <span data-lang="de">Ihr Lichtprojekt</span>
-      <span data-lang="en">Your lighting project</span>
+      <span data-lang="de">Ihr Lichtprojekt</span><span data-lang="en">Your lighting project</span>
     </span>
-    <h2 class="fade-in fade-in-delay-1" style="color:var(--white);margin-top:.75rem;margin-bottom:1rem;">
+    <h2 class="fade-in fade-in-delay-1">
       <span data-lang="de">Bereit, Räume zu verwandeln?</span>
       <span data-lang="en">Ready to transform spaces?</span>
     </h2>
-    <p class="fade-in fade-in-delay-2" style="color:rgba(255,255,255,.6);font-size:1.05rem;font-weight:300;max-width:480px;margin:0 auto 2.5rem;">
-      <span data-lang="de">Sprechen Sie mit unseren Lichtexperten über Ihr Vorhaben – wir finden gemeinsam die perfekte Lösung.</span>
-      <span data-lang="en">Talk to our lighting experts about your project – together we'll find the perfect solution.</span>
+    <p class="fade-in fade-in-delay-2">
+      <span data-lang="de">Sprechen Sie mit unseren Lichtexperten – wir finden gemeinsam die perfekte Lösung.</span>
+      <span data-lang="en">Talk to our lighting experts – together we'll find the perfect solution.</span>
     </p>
-    <div class="fade-in fade-in-delay-3" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="fade-in fade-in-delay-3">
       <a href="kontakt.html" class="btn btn-gold">
-        <span data-lang="de">Jetzt anfragen</span>
-        <span data-lang="en">Get in touch</span>
-        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
+        <span data-lang="de">Jetzt anfragen</span><span data-lang="en">Get in touch</span>
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="produkte.html" class="btn" style="border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.8);">
-        <span data-lang="de">Produkte ansehen</span>
-        <span data-lang="en">View products</span>
+      <a href="produkte.html" class="btn" style="border:2px solid rgba(90,137,168,.5);color:rgba(255,255,255,.8);">
+        <span data-lang="de">Alle Produkte</span><span data-lang="en">All products</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
+<!-- ═══════════════════ FOOTER ════════════════════════════════ -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo-name">Kotzolt</div>
         <div class="logo-sub">International GmbH</div>
-        <p>
-          <span data-lang="de">Hersteller von hochwertiger Beleuchtung und individuellen Lichtlösungen. Qualität, Nachhaltigkeit und Flexibilität – Made in Germany.</span>
-          <span data-lang="en">Manufacturer of high-quality lighting and individual light solutions. Quality, sustainability and flexibility – Made in Germany.</span>
-        </p>
+        <p><span data-lang="de">Hersteller von hochwertiger Beleuchtung und individuellen Lichtlösungen. Made in Germany.</span><span data-lang="en">Manufacturer of high-quality lighting and individual light solutions. Made in Germany.</span></p>
         <div class="footer-social">
-          <a href="https://www.instagram.com" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">in</a>
-          <a href="https://www.linkedin.com" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">Li</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
           <a href="https://www.youtube.com/@kotzolt6738" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">▶</a>
-          <a href="https://www.pinterest.com" class="social-icon" aria-label="Pinterest" target="_blank" rel="noopener">P</a>
+          <a href="#" class="social-icon" aria-label="Pinterest">P</a>
         </div>
       </div>
-
       <div class="footer-col">
-        <h5>
-          <span data-lang="de">Produkte</span>
-          <span data-lang="en">Products</span>
-        </h5>
+        <h5><span data-lang="de">Produkte</span><span data-lang="en">Products</span></h5>
         <ul>
           <li><a href="produkte.html">Planus</a></li>
           <li><a href="produkte.html">Lightline</a></li>
@@ -508,12 +449,8 @@
           <li><a href="produkte.html">Pictura</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
-        <h5>
-          <span data-lang="de">Unternehmen</span>
-          <span data-lang="en">Company</span>
-        </h5>
+        <h5><span data-lang="de">Unternehmen</span><span data-lang="en">Company</span></h5>
         <ul>
           <li><a href="ueber-uns.html"><span data-lang="de">Über uns</span><span data-lang="en">About us</span></a></li>
           <li><a href="leistungen.html"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a></li>
@@ -521,32 +458,21 @@
           <li><a href="kontakt.html"><span data-lang="de">Karriere</span><span data-lang="en">Careers</span></a></li>
         </ul>
       </div>
-
       <div class="footer-col">
-        <h5>
-          <span data-lang="de">Kontakt</span>
-          <span data-lang="en">Contact</span>
-        </h5>
+        <h5><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></h5>
         <ul>
           <li><a href="kontakt.html">Lemgo, Deutschland</a></li>
           <li><a href="kontakt.html"><span data-lang="de">Projektanfrage</span><span data-lang="en">Project inquiry</span></a></li>
           <li><a href="kontakt.html">Newsletter</a></li>
-          <li><a href="https://wa.me" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="#">WhatsApp</a></li>
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <span>© 2024 Kotzolt International GmbH · Lemgo</span>
       <div class="footer-legal">
-        <a href="#">
-          <span data-lang="de">Impressum</span>
-          <span data-lang="en">Legal Notice</span>
-        </a>
-        <a href="#">
-          <span data-lang="de">Datenschutz</span>
-          <span data-lang="en">Privacy Policy</span>
-        </a>
+        <a href="#"><span data-lang="de">Impressum</span><span data-lang="en">Legal Notice</span></a>
+        <a href="#"><span data-lang="de">Datenschutz</span><span data-lang="en">Privacy Policy</span></a>
       </div>
     </div>
   </div>
