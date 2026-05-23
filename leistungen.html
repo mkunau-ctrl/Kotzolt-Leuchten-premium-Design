@@ -6,74 +6,10 @@
   <title>Leistungen — Kotzolt International GmbH</title>
   <meta name="description" content="Unsere Leistungen: Leuchtenverkauf, Leuchtensanierung, individuelle Lichtlösungen und Energieberatung." />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .service-detail {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 5rem;
-      align-items: center;
-      padding: 5rem 0;
-      border-bottom: 1px solid var(--border-light);
-    }
-    .service-detail:last-child { border-bottom: none; }
-    .service-detail:nth-child(even) .service-detail-visual { order: -1; }
-    .service-detail-visual {
-      height: 380px;
-      background: var(--bg-cream);
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .service-detail-visual::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 40% 40%, rgba(212,176,96,.2) 0%, transparent 60%);
-    }
-    .service-detail-icon { font-size: 5rem; opacity: .25; position: relative; z-index: 1; }
-    .service-detail-text .label { margin-bottom: 1rem; }
-    .service-detail-text h2 { margin-bottom: 1rem; }
-    .service-detail-text p {
-      font-size: .95rem;
-      color: var(--text-secondary);
-      font-weight: 300;
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
-    .service-steps { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
-    .step {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      padding: 1rem 1.25rem;
-      background: var(--bg-warm);
-      border-radius: var(--radius);
-      border-left: 3px solid var(--gold-pale);
-      transition: border-color var(--transition);
-    }
-    .step:hover { border-left-color: var(--gold); }
-    .step-num {
-      font-family: var(--font-serif);
-      font-size: 1.4rem;
-      font-weight: 300;
-      color: var(--gold);
-      min-width: 1.8rem;
-      line-height: 1.2;
-    }
-    .step-text h4 { font-size: .9rem; font-weight: 500; margin-bottom: .25rem; }
-    .step-text p { font-size: .82rem; color: var(--text-muted); margin: 0; font-weight: 300; line-height: 1.5; }
-    @media (max-width: 768px) {
-      .service-detail { grid-template-columns: 1fr; gap: 2.5rem; }
-      .service-detail:nth-child(even) .service-detail-visual { order: 0; }
-      .service-detail-visual { height: 240px; }
-    }
-  </style>
 </head>
 <body>
 
+<!-- Mobile Nav -->
 <nav class="mobile-nav" role="dialog">
   <button class="mobile-close" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--text-primary);">✕</button>
   <a href="index.html"><span data-lang="de">Startseite</span><span data-lang="en">Home</span></a>
@@ -84,6 +20,7 @@
   <a href="kontakt.html"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a>
 </nav>
 
+<!-- Header -->
 <header class="site-header">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
@@ -104,176 +41,212 @@
       <a href="kontakt.html" class="btn-contact">
         <span data-lang="de">Kontakt</span><span data-lang="en">Contact</span>
       </a>
-      <button class="nav-hamburger" aria-label="Menü">
+      <button class="nav-hamburger" aria-label="Menü" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
+<!-- Page Hero -->
 <section class="page-hero">
+  <div class="page-hero-bg" data-parallax="0.4" style="background-image:url('https://kotzolt.com/wp-content/uploads/2024/04/Umruestung_Columnia_nachher_5-1500x430.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container"><div class="page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Kotzolt</a>
+      <span class="breadcrumb-sep">›</span>
+      <span><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></span>
+    </nav>
+    <span class="label" style="color:var(--cold-pale);">
+      <span data-lang="de">Was wir für Sie tun</span>
+      <span data-lang="en">What we do for you</span>
+    </span>
+    <h1 style="color:var(--white);">
+      <span data-lang="de">Unsere Leistungen</span>
+      <span data-lang="en">Our Services</span>
+    </h1>
+    <div class="divider" style="background:var(--cold);"></div>
+    <p style="color:rgba(255,255,255,.65);">
+      <span data-lang="de">Von der Planung über die Fertigung bis zur Modernisierung – wir begleiten Ihr Lichtprojekt von Anfang bis Ende.</span>
+      <span data-lang="en">From planning through manufacturing to modernisation – we accompany your lighting project from start to finish.</span>
+    </p>
+  </div></div>
+</section>
+
+<!-- Counter Bar -->
+<div class="counter-bar section-sm">
   <div class="container">
-    <div class="page-hero-content">
-      <nav class="breadcrumb">
-        <a href="index.html">Kotzolt</a>
-        <span class="breadcrumb-sep">›</span>
-        <span><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></span>
-      </nav>
+    <div class="counter-grid scale-up">
+      <div class="counter-item">
+        <span class="counter-num" data-target="3">3</span>
+        <span class="counter-label">
+          <span data-lang="de">Kernleistungen</span>
+          <span data-lang="en">Core services</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="75" data-suffix="%">75%</span>
+        <span class="counter-label">
+          <span data-lang="de">Energieeinsparung möglich</span>
+          <span data-lang="en">Energy savings possible</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="100" data-suffix="%">100%</span>
+        <span class="counter-label">
+          <span data-lang="de">Deutsche Komponenten</span>
+          <span data-lang="en">German components</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="4">4</span>
+        <span class="counter-label">
+          <span data-lang="de">Prozessschritte</span>
+          <span data-lang="en">Process steps</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services – arrow-info list -->
+<section class="section" id="leistungen">
+  <div class="container">
+    <header class="section-header fade-in">
       <span class="label">
-        <span data-lang="de">Was wir für Sie tun</span>
-        <span data-lang="en">What we do for you</span>
+        <span data-lang="de">Kernkompetenzen</span>
+        <span data-lang="en">Core competences</span>
       </span>
-      <h1>
-        <span data-lang="de">Unsere Leistungen</span>
-        <span data-lang="en">Our Services</span>
-      </h1>
-      <div class="divider"></div>
+      <h2>
+        <span data-lang="de">Mehr als nur eine Leuchte</span>
+        <span data-lang="en">More than just a luminaire</span>
+      </h2>
+      <div class="divider divider-center"></div>
       <p>
-        <span data-lang="de">Von der Planung über die Fertigung bis zur Modernisierung – wir begleiten Ihr Lichtprojekt von Anfang bis Ende.</span>
-        <span data-lang="en">From planning through manufacturing to modernisation – we accompany your lighting project from start to finish.</span>
+        <span data-lang="de">Drei Kernleistungen – ein gemeinsamer Anspruch: perfektes Licht für Ihren Raum.</span>
+        <span data-lang="en">Three core services – one shared standard: perfect light for your space.</span>
       </p>
+    </header>
+
+    <div class="arrow-info-list">
+
+      <!-- → Leuchtenverkauf & Beratung -->
+      <div class="arrow-info slide-left">
+        <div class="arrow-info-img">
+          <img src="https://kotzolt.com/wp-content/uploads/2019/06/Licht_am_Arbeitsplatz.jpg" alt="Leuchtenverkauf und Beratung – Büroprojekt" loading="lazy"/>
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">
+            <span data-lang="de">Kernkompetenz</span>
+            <span data-lang="en">Core competence</span>
+          </span>
+          <h3>
+            <span data-lang="de">Leuchtenverkauf &amp; Beratung</span>
+            <span data-lang="en">Luminaire Sales &amp; Consulting</span>
+          </h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Wir verkaufen keine Massenware – wir entwickeln Lichtlösungen, die exakt auf Ihre Anforderungen zugeschnitten sind. Jede Leuchte ist konfigurierbar: Maße, Farben, Lichtcharakter, Montageart und Technologie werden gemeinsam mit Ihnen festgelegt. Unsere Experten beraten zu Lichtplanung, Normanforderungen und Energieeffizienz.</span>
+            <span data-lang="en">We don't sell mass-produced goods – we develop lighting solutions precisely tailored to your requirements. Every luminaire is configurable: dimensions, colours, light character, mounting type and technology are determined together with you. Our experts advise on light planning, standard requirements and energy efficiency.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag"><span data-lang="de">Konfigurierbar</span><span data-lang="en">Configurable</span></span>
+            <span class="arrow-tag"><span data-lang="de">Persönliche Beratung</span><span data-lang="en">Personal consulting</span></span>
+            <span class="arrow-tag">Made in Germany</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ← Leuchtensanierung -->
+      <div class="arrow-info reverse slide-right">
+        <div class="arrow-info-img">
+          <img src="https://kotzolt.com/wp-content/uploads/2024/08/Boehringer-Ingelheim-liess-Leuchten-mit-LED-ausstatten-495x400.jpg" alt="Leuchtensanierung – nachhaltiges LED-Upgrade" loading="lazy"/>
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">
+            <span data-lang="de">Nachhaltigkeit</span>
+            <span data-lang="en">Sustainability</span>
+          </span>
+          <h3>
+            <span data-lang="de">Leuchtensanierung</span>
+            <span data-lang="en">Luminaire Renovation</span>
+          </h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Das Innenleben wechselt, der Leuchtenkorpus bleibt. Unser nachhaltiger Ansatz zur Modernisierung bestehender Beleuchtungsanlagen: Wir tauschen die veraltete Technik im Inneren Ihrer Leuchten gegen modernste LED-Technologie aus. Dies spart Ressourcen, reduziert Abfall und senkt die Investitionskosten erheblich.</span>
+            <span data-lang="en">The inside changes, the housing remains. Our sustainable approach to modernising existing lighting systems: we replace the outdated technology inside your luminaires with state-of-the-art LED technology. This saves resources, reduces waste and significantly lowers investment costs.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag"><span data-lang="de">Bis 75% Energieeinsparung</span><span data-lang="en">Up to 75% energy savings</span></span>
+            <span class="arrow-tag">LED</span>
+            <span class="arrow-tag"><span data-lang="de">Ressourcenschonend</span><span data-lang="en">Resource-efficient</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- → Individuelle Lichtlösungen -->
+      <div class="arrow-info slide-left">
+        <div class="arrow-info-img">
+          <img src="https://kotzolt.com/wp-content/uploads/2024/04/Umruestung_Columnia-495x400.jpg" alt="Individuelle Lichtlösungen – Sonderanfertigung" loading="lazy"/>
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">
+            <span data-lang="de">Sonderanfertigung</span>
+            <span data-lang="en">Custom manufacturing</span>
+          </span>
+          <h3>
+            <span data-lang="de">Individuelle Lichtlösungen</span>
+            <span data-lang="en">Individual Lighting Solutions</span>
+          </h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Wenn Standardlösungen nicht ausreichen, entwickeln wir gemeinsam mit Ihnen einzigartige Sonderanfertigungen. Ob Glaslichtflächen in Sondermaßen, besondere Materialkombinationen oder völlig neue Leuchtenformen – wir setzen Ihre Vision in Licht um. Referenzprojekte wie die Grabeskirche Jerusalem oder das British Museum London belegen unsere Kompetenz.</span>
+            <span data-lang="en">When standard solutions aren't enough, we develop unique custom solutions together with you. Whether glass light surfaces in special dimensions, particular material combinations or completely new luminaire forms – we transform your vision into light. Reference projects such as the Church of the Holy Sepulchre or the British Museum demonstrate our expertise.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag"><span data-lang="de">Glaslichtflächen</span><span data-lang="en">Glass light surfaces</span></span>
+            <span class="arrow-tag"><span data-lang="de">Sondermaße</span><span data-lang="en">Special dimensions</span></span>
+            <span class="arrow-tag"><span data-lang="de">Weltweit</span><span data-lang="en">Worldwide</span></span>
+          </div>
+          <a href="kontakt.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+            <span data-lang="de">Sonderprojekt anfragen</span>
+            <span data-lang="en">Request custom project</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-
-    <!-- Service 1: Leuchtenverkauf -->
-    <div class="service-detail">
-      <div class="service-detail-visual fade-in">
-        <span class="service-detail-icon">🔆</span>
-      </div>
-      <div class="service-detail-text fade-in fade-in-delay-1">
-        <span class="label">
-          <span data-lang="de">Kernkompetenz</span>
-          <span data-lang="en">Core competence</span>
-        </span>
-        <h2>
-          <span data-lang="de">Leuchtenverkauf &amp; Beratung</span>
-          <span data-lang="en">Luminaire Sales &amp; Consulting</span>
-        </h2>
-        <div class="divider"></div>
-        <p>
-          <span data-lang="de">Wir verkaufen keine Massenware – wir entwickeln Lichtlösungen, die exakt auf Ihre Anforderungen zugeschnitten sind. Jede Leuchte ist konfigurierbar: Maße, Farben, Lichtcharakter, Montageart und Technologie werden gemeinsam mit Ihnen festgelegt.</span>
-          <span data-lang="en">We don't sell mass-produced goods – we develop lighting solutions precisely tailored to your requirements. Every luminaire is configurable: dimensions, colours, light character, mounting type and technology are determined together with you.</span>
-        </p>
-        <p>
-          <span data-lang="de">Unsere Experten beraten Sie zu Lichtplanung, Normanforderungen und Energieeffizienz – und finden die optimale Balance zwischen Ästhetik und Funktion.</span>
-          <span data-lang="en">Our experts advise you on light planning, standard requirements and energy efficiency – finding the optimal balance between aesthetics and function.</span>
-        </p>
-        <div class="service-steps">
-          <div class="step">
-            <div class="step-num">1</div>
-            <div class="step-text">
-              <h4><span data-lang="de">Erstgespräch &amp; Bedarfsanalyse</span><span data-lang="en">Initial consultation &amp; needs analysis</span></h4>
-              <p><span data-lang="de">Wir verstehen Ihre Anforderungen und Ziele.</span><span data-lang="en">We understand your requirements and goals.</span></p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-num">2</div>
-            <div class="step-text">
-              <h4><span data-lang="de">Konzept &amp; Planung</span><span data-lang="en">Concept &amp; Planning</span></h4>
-              <p><span data-lang="de">Individuelles Lichtkonzept und Leuchtenauswahl.</span><span data-lang="en">Individual lighting concept and luminaire selection.</span></p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <div class="step-text">
-              <h4><span data-lang="de">Fertigung in Deutschland</span><span data-lang="en">Manufacturing in Germany</span></h4>
-              <p><span data-lang="de">Produktion mit ausschließlich deutschen Komponenten.</span><span data-lang="en">Production using exclusively German components.</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Parallax Divider – Process -->
+<div class="parallax-divider" style="min-height:400px;">
+  <div class="parallax-divider-bg" data-parallax="0.4" style="background-image:url('https://kotzolt.com/wp-content/uploads/2024/04/Umruestung_Columnia_nachher_5-1500x430.jpg');"></div>
+  <div class="parallax-divider-overlay" style="background:linear-gradient(135deg,rgba(28,25,22,.88) 0%,rgba(58,106,138,.55) 100%);"></div>
+  <div class="container parallax-divider-content">
+    <div style="max-width:680px;" class="fade-in">
+      <span class="label" style="color:var(--cold-pale);display:block;margin-bottom:1rem;">
+        <span data-lang="de">Unser Prozess</span>
+        <span data-lang="en">Our process</span>
+      </span>
+      <blockquote>
+        <span data-lang="de">„Jedes Projekt beginnt mit einem Gespräch – und endet mit perfektem Licht."</span>
+        <span data-lang="en">"Every project starts with a conversation – and ends with perfect light."</span>
+        <cite>Kotzolt International GmbH · Lemgo</cite>
+      </blockquote>
     </div>
-
-    <!-- Service 2: Leuchtensanierung -->
-    <div class="service-detail">
-      <div class="service-detail-visual fade-in" style="background:linear-gradient(135deg,#e8f0e8,#d8e8d8);">
-        <span class="service-detail-icon">♻️</span>
-      </div>
-      <div class="service-detail-text fade-in fade-in-delay-1">
-        <span class="label">
-          <span data-lang="de">Nachhaltigkeit</span>
-          <span data-lang="en">Sustainability</span>
-        </span>
-        <h2>
-          <span data-lang="de">Leuchtensanierung</span>
-          <span data-lang="en">Luminaire Renovation</span>
-        </h2>
-        <div class="divider"></div>
-        <p>
-          <span data-lang="de"><strong>Das Innenleben wechselt, der Leuchtenkorpus bleibt.</strong> Unser nachhaltiger Ansatz zur Modernisierung bestehender Beleuchtungsanlagen: Wir tauschen die veraltete Technik im Inneren Ihrer Leuchten gegen modernste LED-Technologie aus – der äußere Körper bleibt erhalten.</span>
-          <span data-lang="en"><strong>The inside changes, the housing remains.</strong> Our sustainable approach to modernising existing lighting systems: we replace the outdated technology inside your luminaires with state-of-the-art LED technology – the outer housing is preserved.</span>
-        </p>
-        <p>
-          <span data-lang="de">Dies spart Ressourcen, reduziert Abfall und senkt die Investitionskosten erheblich. Gleichzeitig profitieren Sie von dramatisch gesenktem Energieverbrauch und verbesserter Lichtqualität.</span>
-          <span data-lang="en">This saves resources, reduces waste and significantly lowers investment costs. At the same time, you benefit from dramatically reduced energy consumption and improved light quality.</span>
-        </p>
-        <div class="service-steps">
-          <div class="step">
-            <div class="step-num">→</div>
-            <div class="step-text">
-              <h4><span data-lang="de">Bis zu 75% Energieeinsparung</span><span data-lang="en">Up to 75% energy savings</span></h4>
-              <p><span data-lang="de">Durch moderne LED-Technologie.</span><span data-lang="en">Through modern LED technology.</span></p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-num">→</div>
-            <div class="step-text">
-              <h4><span data-lang="de">Ressourcenschonung</span><span data-lang="en">Resource conservation</span></h4>
-              <p><span data-lang="de">Leuchtenkorpus bleibt vollständig erhalten.</span><span data-lang="en">Luminaire housing is fully preserved.</span></p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-num">→</div>
-            <div class="step-text">
-              <h4><span data-lang="de">Kürzere Amortisationszeit</span><span data-lang="en">Shorter payback period</span></h4>
-              <p><span data-lang="de">Kein kompletter Leuchtenersatz notwendig.</span><span data-lang="en">No complete luminaire replacement necessary.</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Service 3: Individuelle Lösungen -->
-    <div class="service-detail">
-      <div class="service-detail-visual fade-in" style="background:linear-gradient(135deg,#f5ede0,#eee0cc);">
-        <span class="service-detail-icon">✏️</span>
-      </div>
-      <div class="service-detail-text fade-in fade-in-delay-1">
-        <span class="label">
-          <span data-lang="de">Sonderanfertigung</span>
-          <span data-lang="en">Custom manufacturing</span>
-        </span>
-        <h2>
-          <span data-lang="de">Individuelle Lichtlösungen</span>
-          <span data-lang="en">Individual Lighting Solutions</span>
-        </h2>
-        <div class="divider"></div>
-        <p>
-          <span data-lang="de">Wenn Standardlösungen nicht ausreichen, entwickeln wir gemeinsam mit Ihnen einzigartige Sonderanfertigungen. Ob Glaslichtflächen in Sondermaßen, besondere Materialkombinationen oder völlig neue Leuchtenformen – wir setzen Ihre Vision in Licht um.</span>
-          <span data-lang="en">When standard solutions aren't enough, we develop unique custom solutions together with you. Whether glass light surfaces in special dimensions, particular material combinations or completely new luminaire forms – we transform your vision into light.</span>
-        </p>
-        <p>
-          <span data-lang="de">Referenzprojekte wie die Grabeskirche Jerusalem oder das British Museum London belegen unsere Kompetenz bei außergewöhnlichen Anforderungen.</span>
-          <span data-lang="en">Reference projects such as the Church of the Holy Sepulchre in Jerusalem or the British Museum in London demonstrate our expertise with extraordinary requirements.</span>
-        </p>
-        <a href="kontakt.html" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;">
-          <span data-lang="de">Sonderprojekt anfragen</span>
-          <span data-lang="en">Request custom project</span>
-          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" style="width:16px;height:16px;">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
   </div>
-</section>
+</div>
 
-<!-- Process Banner -->
+<!-- Process Steps – dark counter grid -->
 <section class="section" style="background:var(--bg-warm);">
   <div class="container">
     <header class="section-header fade-in">
@@ -286,16 +259,13 @@
         <span data-lang="en">How we work</span>
       </h2>
       <div class="divider divider-center"></div>
-      <p>
-        <span data-lang="de">Jedes Projekt beginnt mit einem Gespräch – und endet mit perfektem Licht.</span>
-        <span data-lang="en">Every project starts with a conversation – and ends with perfect light.</span>
-      </p>
     </header>
 
     <div class="grid-4">
-      <div class="service-item fade-in" style="text-align:center;">
+
+      <div class="service-item fade-in" style="text-align:center;border:2px solid var(--cold-pale);">
         <div class="service-icon" style="margin:0 auto 1.5rem;">
-          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;">
           <span data-lang="de">01 · Beratung</span>
@@ -306,9 +276,10 @@
           <span data-lang="en">Personal conversation, requirements capture and needs analysis.</span>
         </p>
       </div>
-      <div class="service-item fade-in fade-in-delay-1" style="text-align:center;">
+
+      <div class="service-item fade-in fade-in-delay-1" style="text-align:center;border:2px solid var(--cold-pale);">
         <div class="service-icon" style="margin:0 auto 1.5rem;">
-          <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;">
           <span data-lang="de">02 · Konzept</span>
@@ -319,9 +290,10 @@
           <span data-lang="en">Development of the bespoke lighting concept and luminaire selection.</span>
         </p>
       </div>
-      <div class="service-item fade-in fade-in-delay-2" style="text-align:center;">
+
+      <div class="service-item fade-in fade-in-delay-2" style="text-align:center;border:2px solid var(--cold-pale);">
         <div class="service-icon" style="margin:0 auto 1.5rem;">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;">
           <span data-lang="de">03 · Fertigung</span>
@@ -332,9 +304,10 @@
           <span data-lang="en">Production in Germany with German components and the highest quality standards.</span>
         </p>
       </div>
-      <div class="service-item fade-in fade-in-delay-3" style="text-align:center;">
+
+      <div class="service-item fade-in fade-in-delay-3" style="text-align:center;border:2px solid var(--cold-pale);">
         <div class="service-icon" style="margin:0 auto 1.5rem;">
-          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;">
           <span data-lang="de">04 · Umsetzung</span>
@@ -345,30 +318,104 @@
           <span data-lang="en">Delivery, installation and acceptance – your lighting project is complete.</span>
         </p>
       </div>
+
     </div>
   </div>
 </section>
 
-<section class="cta-banner section-sm">
-  <div class="container" style="position:relative;z-index:1;text-align:center;">
-    <h2 class="fade-in" style="color:var(--white);margin-bottom:1rem;">
-      <span data-lang="de">Starten Sie Ihr Lichtprojekt</span>
-      <span data-lang="en">Start your lighting project</span>
-    </h2>
-    <p class="fade-in fade-in-delay-1" style="color:rgba(255,255,255,.6);max-width:440px;margin:0 auto 2rem;font-weight:300;">
-      <span data-lang="de">Kontaktieren Sie uns für eine unverbindliche Beratung.</span>
-      <span data-lang="en">Contact us for a non-binding consultation.</span>
-    </p>
-    <a href="kontakt.html" class="btn btn-gold fade-in fade-in-delay-2">
-      <span data-lang="de">Jetzt Beratung anfragen</span>
-      <span data-lang="en">Request consultation now</span>
-      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" style="width:16px;height:16px;">
-        <path d="M5 12h14M12 5l7 7-7 7"/>
-      </svg>
-    </a>
+<!-- Service Items – 4 strengths with cold borders -->
+<section class="section">
+  <div class="container">
+    <header class="section-header fade-in">
+      <span class="label">
+        <span data-lang="de">Unsere Stärken</span>
+        <span data-lang="en">Our strengths</span>
+      </span>
+      <h2>
+        <span data-lang="de">Warum Kotzolt?</span>
+        <span data-lang="en">Why Kotzolt?</span>
+      </h2>
+      <div class="divider divider-center"></div>
+    </header>
+
+    <div class="services-list">
+      <div class="service-item slide-left">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </div>
+        <h3><span data-lang="de">Individuelle Beratung</span><span data-lang="en">Individual Consulting</span></h3>
+        <p>
+          <span data-lang="de">Jedes Lichtprojekt beginnt mit einem persönlichen Gespräch. Wir verstehen Ihre Anforderungen und entwickeln die optimale Lösung.</span>
+          <span data-lang="en">Every lighting project starts with a personal conversation. We understand your requirements and develop the optimal solution.</span>
+        </p>
+      </div>
+      <div class="service-item slide-right">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3><span data-lang="de">Deutsche Fertigung</span><span data-lang="en">German Manufacturing</span></h3>
+        <p>
+          <span data-lang="de">Ausschließlich deutsche Zulieferer und Komponenten. Produziert in Lemgo – kurze Wege, maximale Qualitätskontrolle.</span>
+          <span data-lang="en">Exclusively German suppliers and components. Produced in Lemgo – short supply chains, maximum quality control.</span>
+        </p>
+      </div>
+      <div class="service-item slide-left">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3><span data-lang="de">Sonderanfertigungen</span><span data-lang="en">Custom Solutions</span></h3>
+        <p>
+          <span data-lang="de">Von Glaslichtflächen bis Faserlicht – wir entwickeln einzigartige Lösungen für außergewöhnliche Anforderungen weltweit.</span>
+          <span data-lang="en">From glass light surfaces to fibre optics – we develop unique solutions for extraordinary requirements worldwide.</span>
+        </p>
+      </div>
+      <div class="service-item slide-right">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3><span data-lang="de">Nachhaltigkeit</span><span data-lang="en">Sustainability</span></h3>
+        <p>
+          <span data-lang="de">LED-Technologie und Leuchtensanierung für minimalen Ressourcenverbrauch – das Innenleben wechselt, der Korpus bleibt.</span>
+          <span data-lang="en">LED technology and luminaire renovation for minimal resource use – the inside changes, the housing remains.</span>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- CTA Banner -->
+<section class="cta-banner section">
+  <div class="cta-banner-bg" data-parallax="0.3" style="background-image:url('https://kotzolt.com/wp-content/uploads/2024/08/Stadtwerke_Neubrandenburg_Aures-1500x430.jpg');"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="cta-banner-border"></div>
+  <div class="container cta-banner-content">
+    <span class="label fade-in" style="color:var(--cold-pale);">
+      <span data-lang="de">Ihr Lichtprojekt</span>
+      <span data-lang="en">Your lighting project</span>
+    </span>
+    <h2 class="fade-in fade-in-delay-1" style="color:var(--white);">
+      <span data-lang="de">Starten Sie Ihr Lichtprojekt</span>
+      <span data-lang="en">Start your lighting project</span>
+    </h2>
+    <p class="fade-in fade-in-delay-2" style="color:rgba(255,255,255,.65);max-width:480px;margin:0 auto 2rem;">
+      <span data-lang="de">Kontaktieren Sie uns für eine unverbindliche Beratung.</span>
+      <span data-lang="en">Contact us for a non-binding consultation.</span>
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="fade-in fade-in-delay-3">
+      <a href="kontakt.html" class="btn btn-gold">
+        <span data-lang="de">Jetzt Beratung anfragen</span>
+        <span data-lang="en">Request consultation now</span>
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="referenzen.html" class="btn" style="border:2px solid rgba(90,137,168,.5);color:rgba(255,255,255,.8);">
+        <span data-lang="de">Referenzen ansehen</span>
+        <span data-lang="en">View references</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -377,10 +424,10 @@
         <div class="logo-sub">International GmbH</div>
         <p><span data-lang="de">Hersteller von hochwertiger Beleuchtung und individuellen Lichtlösungen. Made in Germany.</span><span data-lang="en">Manufacturer of high-quality lighting and individual light solutions. Made in Germany.</span></p>
         <div class="footer-social">
-          <a href="#" class="social-icon">in</a>
-          <a href="#" class="social-icon">Li</a>
-          <a href="#" class="social-icon">▶</a>
-          <a href="#" class="social-icon">P</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
+          <a href="https://www.youtube.com/@kotzolt6738" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">▶</a>
+          <a href="#" class="social-icon" aria-label="Pinterest">P</a>
         </div>
       </div>
       <div class="footer-col">
@@ -390,6 +437,8 @@
           <li><a href="produkte.html">Lightline</a></li>
           <li><a href="produkte.html">Aures</a></li>
           <li><a href="produkte.html">UFO</a></li>
+          <li><a href="produkte.html">Evolution</a></li>
+          <li><a href="produkte.html">Pictura</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -398,6 +447,7 @@
           <li><a href="ueber-uns.html"><span data-lang="de">Über uns</span><span data-lang="en">About us</span></a></li>
           <li><a href="leistungen.html"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a></li>
           <li><a href="referenzen.html"><span data-lang="de">Referenzen</span><span data-lang="en">References</span></a></li>
+          <li><a href="kontakt.html"><span data-lang="de">Karriere</span><span data-lang="en">Careers</span></a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -405,6 +455,8 @@
         <ul>
           <li><a href="kontakt.html">Lemgo, Deutschland</a></li>
           <li><a href="kontakt.html"><span data-lang="de">Projektanfrage</span><span data-lang="en">Project inquiry</span></a></li>
+          <li><a href="kontakt.html">Newsletter</a></li>
+          <li><a href="#">WhatsApp</a></li>
         </ul>
       </div>
     </div>

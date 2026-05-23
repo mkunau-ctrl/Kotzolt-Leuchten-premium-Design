@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- Mobile Nav -->
 <nav class="mobile-nav" role="dialog">
   <button class="mobile-close" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--text-primary);">✕</button>
   <a href="index.html"><span data-lang="de">Startseite</span><span data-lang="en">Home</span></a>
@@ -19,6 +20,7 @@
   <a href="kontakt.html"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a>
 </nav>
 
+<!-- Header -->
 <header class="site-header">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
@@ -39,73 +41,184 @@
       <a href="kontakt.html" class="btn-contact">
         <span data-lang="de">Kontakt</span><span data-lang="en">Contact</span>
       </a>
-      <button class="nav-hamburger" aria-label="Menü">
+      <button class="nav-hamburger" aria-label="Menü" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
+<!-- Page Hero -->
 <section class="page-hero">
-  <div class="container">
-    <div class="page-hero-content">
-      <nav class="breadcrumb">
-        <a href="index.html">Kotzolt</a>
-        <span class="breadcrumb-sep">›</span>
-        <span><span data-lang="de">Über uns</span><span data-lang="en">About us</span></span>
-      </nav>
-      <span class="label">
-        <span data-lang="de">Unternehmen</span>
-        <span data-lang="en">Company</span>
-      </span>
-      <h1>
-        <span data-lang="de">Wer wir sind</span>
-        <span data-lang="en">Who we are</span>
-      </h1>
-      <div class="divider"></div>
-      <p>
-        <span data-lang="de">Kotzolt International GmbH – ein deutsches Unternehmen mit Leidenschaft für Licht, Qualität und nachhaltige Lösungen.</span>
-        <span data-lang="en">Kotzolt International GmbH – a German company with a passion for light, quality and sustainable solutions.</span>
-      </p>
-    </div>
-  </div>
+  <div class="page-hero-bg" data-parallax="0.4" style="background-image:url('https://kotzolt.com/wp-content/uploads/2024/08/Stadtwerke_Neubrandenburg_Aures-1500x430.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container"><div class="page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Kotzolt</a>
+      <span class="breadcrumb-sep">›</span>
+      <span><span data-lang="de">Über uns</span><span data-lang="en">About us</span></span>
+    </nav>
+    <span class="label" style="color:var(--cold-pale);">
+      <span data-lang="de">Unternehmen</span>
+      <span data-lang="en">Company</span>
+    </span>
+    <h1 style="color:var(--white);">
+      <span data-lang="de">Wer wir sind</span>
+      <span data-lang="en">Who we are</span>
+    </h1>
+    <div class="divider" style="background:var(--cold);"></div>
+    <p style="color:rgba(255,255,255,.65);">
+      <span data-lang="de">Kotzolt International GmbH – ein deutsches Unternehmen mit Leidenschaft für Licht, Qualität und nachhaltige Lösungen.</span>
+      <span data-lang="en">Kotzolt International GmbH – a German company with a passion for light, quality and sustainable solutions.</span>
+    </p>
+  </div></div>
 </section>
 
-<!-- Company Overview -->
-<section class="section">
+<!-- Counter Bar -->
+<div class="counter-bar section-sm">
   <div class="container">
-    <div class="about-split">
-      <div class="fade-in">
-        <span class="label" style="display:block;margin-bottom:1rem;">
-          <span data-lang="de">Unser Unternehmen</span>
-          <span data-lang="en">Our Company</span>
+    <div class="counter-grid scale-up">
+      <div class="counter-item">
+        <span class="counter-num" data-target="100" data-suffix="%">100%</span>
+        <span class="counter-label">
+          <span data-lang="de">Made in Germany</span>
+          <span data-lang="en">Made in Germany</span>
         </span>
-        <h2>
-          <span data-lang="de">Licht als Handwerk und Leidenschaft</span>
-          <span data-lang="en">Light as craft and passion</span>
-        </h2>
-        <div class="divider"></div>
-        <p style="color:var(--text-secondary);font-size:.95rem;font-weight:300;line-height:1.8;margin-bottom:1.25rem;">
-          <span data-lang="de">Kotzolt International GmbH ist ein auf Beleuchtung spezialisierter Hersteller mit Sitz in Lemgo, Deutschland. Wir produzieren hochwertige Leuchten und individuelle Lichtlösungen für anspruchsvolle Projekte – von Büros über Sporthallen bis zu weltberühmten Kultureinrichtungen.</span>
-          <span data-lang="en">Kotzolt International GmbH is a lighting-specialised manufacturer based in Lemgo, Germany. We produce high-quality luminaires and individual lighting solutions for demanding projects – from offices and sports halls to world-famous cultural institutions.</span>
-        </p>
-        <p style="color:var(--text-secondary);font-size:.95rem;font-weight:300;line-height:1.8;margin-bottom:1.25rem;">
-          <span data-lang="de">Was uns auszeichnet: Wir setzen ausschließlich auf deutsche Zulieferer und Komponenten. Qualität, Nachhaltigkeit und Flexibilität sind nicht nur Schlagworte – sie sind die Grundlage jeder Entscheidung, die wir treffen.</span>
-          <span data-lang="en">What distinguishes us: we rely exclusively on German suppliers and components. Quality, sustainability and flexibility are not mere buzzwords – they are the foundation of every decision we make.</span>
-        </p>
-        <p style="color:var(--text-secondary);font-size:.95rem;font-weight:300;line-height:1.8;">
-          <span data-lang="de">Unser Leitprinzip: <em>„Nicht unsere Leuchte bestimmt Ihre Planung – sondern umgekehrt."</em> Wir passen uns an Ihre Anforderungen an, nicht andersherum.</span>
-          <span data-lang="en">Our guiding principle: <em>"Not our luminaire determines your planning – but the other way around."</em> We adapt to your requirements, not the other way around.</span>
-        </p>
       </div>
-      <div class="about-visual fade-in fade-in-delay-1">
-        <span class="about-visual-icon">💡</span>
+      <div class="counter-item">
+        <span class="counter-num" data-target="12">12</span>
+        <span class="counter-label">
+          <span data-lang="de">Produktfamilien</span>
+          <span data-lang="en">Product families</span>
+        </span>
       </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="5">5</span>
+        <span class="counter-label">
+          <span data-lang="de">Länder · Referenzen</span>
+          <span data-lang="en">Countries · References</span>
+        </span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="2100">2100</span>
+        <span class="counter-label">
+          <span data-lang="de">Meter Glasfaser · Jerusalem</span>
+          <span data-lang="en">Metres fibre optic · Jerusalem</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Company Overview – arrow-info -->
+<section class="section" id="unternehmen">
+  <div class="container">
+    <header class="section-header fade-in">
+      <span class="label">
+        <span data-lang="de">Unser Unternehmen</span>
+        <span data-lang="en">Our Company</span>
+      </span>
+      <h2>
+        <span data-lang="de">Licht als Handwerk und Leidenschaft</span>
+        <span data-lang="en">Light as craft and passion</span>
+      </h2>
+      <div class="divider divider-center"></div>
+    </header>
+
+    <div class="arrow-info-list">
+
+      <!-- → Company overview with team image -->
+      <div class="arrow-info slide-left">
+        <div class="arrow-info-img">
+          <img src="https://kotzolt.com/wp-content/uploads/2019/06/Licht_am_Arbeitsplatz.jpg" alt="Kotzolt Team und Fertigung in Lemgo" loading="lazy"/>
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">
+            <span data-lang="de">Über uns</span>
+            <span data-lang="en">About us</span>
+          </span>
+          <h3>
+            <span data-lang="de">Kotzolt International GmbH · Lemgo</span>
+            <span data-lang="en">Kotzolt International GmbH · Lemgo</span>
+          </h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Kotzolt International GmbH ist ein auf Beleuchtung spezialisierter Hersteller mit Sitz in Lemgo, Deutschland. Wir produzieren hochwertige Leuchten und individuelle Lichtlösungen für anspruchsvolle Projekte – von Büros über Sporthallen bis zu weltberühmten Kultureinrichtungen.</span>
+            <span data-lang="en">Kotzolt International GmbH is a lighting-specialised manufacturer based in Lemgo, Germany. We produce high-quality luminaires and individual lighting solutions for demanding projects – from offices and sports halls to world-famous cultural institutions.</span>
+          </p>
+          <p style="margin-top:.75rem;">
+            <span data-lang="de">Was uns auszeichnet: Wir setzen ausschließlich auf deutsche Zulieferer und Komponenten. Qualität, Nachhaltigkeit und Flexibilität sind nicht nur Schlagworte – sie sind die Grundlage jeder Entscheidung, die wir treffen.</span>
+            <span data-lang="en">What distinguishes us: we rely exclusively on German suppliers and components. Quality, sustainability and flexibility are not mere buzzwords – they are the foundation of every decision we make.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">Lemgo · Deutschland</span>
+            <span class="arrow-tag">Made in Germany</span>
+            <span class="arrow-tag"><span data-lang="de">Seit Jahrzehnten</span><span data-lang="en">For decades</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ← Standort Lemgo -->
+      <div class="arrow-info reverse slide-right">
+        <div class="arrow-info-img">
+          <img src="https://kotzolt.com/wp-content/uploads/2017/04/CIIT.jpg" alt="Standort Lemgo Deutschland" loading="lazy"/>
+          <div class="arrow-img-overlay"></div>
+        </div>
+        <div class="arrow-info-connector"><span class="arrow-sym"></span></div>
+        <div class="arrow-info-body">
+          <span class="label">
+            <span data-lang="de">Unser Standort</span>
+            <span data-lang="en">Our Location</span>
+          </span>
+          <h3>Lemgo, Deutschland</h3>
+          <div class="divider"></div>
+          <p>
+            <span data-lang="de">Lemgo, im Herzen Ostwestfalens gelegen, ist nicht nur unser Produktionsstandort – es ist unser Zuhause. In dieser Region, bekannt für ihre Industrietradition und Innovationskraft, wurzeln unsere Werte und unser Qualitätsanspruch.</span>
+            <span data-lang="en">Lemgo, located in the heart of East Westphalia, is not only our production site – it's our home. In this region, known for its industrial tradition and innovative power, our values and quality standards are rooted.</span>
+          </p>
+          <p style="margin-top:.75rem;">
+            <span data-lang="de">Von Lemgo aus beliefern wir Kunden weltweit – von Berliner Universitäten bis zu sakralen Stätten in Jerusalem und renommierten Museen in London.</span>
+            <span data-lang="en">From Lemgo, we supply customers worldwide – from Berlin universities to sacred sites in Jerusalem and renowned museums in London.</span>
+          </p>
+          <div class="arrow-tags">
+            <span class="arrow-tag">Ostwestfalen</span>
+            <span class="arrow-tag"><span data-lang="de">Regional verwurzelt</span><span data-lang="en">Regionally rooted</span></span>
+            <span class="arrow-tag"><span data-lang="de">Global aktiv</span><span data-lang="en">Globally active</span></span>
+          </div>
+          <a href="kontakt.html" class="btn btn-outline" style="margin-top:1.25rem;display:inline-flex;">
+            <span data-lang="de">Uns besuchen</span>
+            <span data-lang="en">Visit us</span>
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- Values -->
+<!-- Parallax Divider – Philosophy -->
+<div class="parallax-divider" style="min-height:480px;">
+  <div class="parallax-divider-bg" data-parallax="0.4" style="background-image:url('https://kotzolt.com/wp-content/uploads/2019/03/Lightline_Hyatt.jpg');"></div>
+  <div class="parallax-divider-overlay" style="background:linear-gradient(135deg,rgba(28,25,22,.88) 0%,rgba(58,106,138,.55) 100%);"></div>
+  <div class="container parallax-divider-content">
+    <div style="max-width:760px;" class="fade-in">
+      <span class="label" style="color:var(--cold-pale);display:block;margin-bottom:1rem;">
+        <span data-lang="de">Unser Credo</span>
+        <span data-lang="en">Our Credo</span>
+      </span>
+      <blockquote>
+        <span data-lang="de">„Nicht unsere Leuchte bestimmt Ihre Planung –<br>sondern umgekehrt."</span>
+        <span data-lang="en">"Not our luminaire determines your planning –<br>but the other way around."</span>
+        <cite>Kotzolt International GmbH · Lemgo</cite>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- Values – 2-column grid with cold borders -->
 <section class="section" style="background:var(--bg-warm);">
   <div class="container">
     <header class="section-header fade-in">
@@ -121,112 +234,66 @@
     </header>
 
     <div class="grid-2">
-      <div class="fade-in">
-        <div class="about-values">
-          <div class="value-item">
-            <div class="value-num">01</div>
-            <div>
-              <h4><span data-lang="de">Qualität</span><span data-lang="en">Quality</span></h4>
-              <p>
-                <span data-lang="de">Höchste Fertigungsqualität mit ausschließlich deutschen Zulieferern und Komponenten. Jede Leuchte wird nach strengsten Qualitätsstandards produziert.</span>
-                <span data-lang="en">Highest manufacturing quality with exclusively German suppliers and components. Every luminaire is produced to the strictest quality standards.</span>
-              </p>
-            </div>
-          </div>
-          <div class="value-item">
-            <div class="value-num">02</div>
-            <div>
-              <h4><span data-lang="de">Nachhaltigkeit</span><span data-lang="en">Sustainability</span></h4>
-              <p>
-                <span data-lang="de">Ressourcenschonendes Denken vom Design bis zur Entsorgung. Leuchtensanierung statt Neukauf – das Innenleben wechselt, der Korpus bleibt.</span>
-                <span data-lang="en">Resource-conscious thinking from design to disposal. Luminaire renovation instead of replacement – the inside changes, the housing remains.</span>
-              </p>
-            </div>
-          </div>
+
+      <div class="service-item fade-in" style="border:2px solid var(--cold);">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
+        <h3>
+          <span data-lang="de">01 · Qualität</span>
+          <span data-lang="en">01 · Quality</span>
+        </h3>
+        <p>
+          <span data-lang="de">Höchste Fertigungsqualität mit ausschließlich deutschen Zulieferern und Komponenten. Jede Leuchte wird nach strengsten Qualitätsstandards produziert.</span>
+          <span data-lang="en">Highest manufacturing quality with exclusively German suppliers and components. Every luminaire is produced to the strictest quality standards.</span>
+        </p>
       </div>
 
-      <div class="fade-in fade-in-delay-1">
-        <div class="about-values">
-          <div class="value-item">
-            <div class="value-num">03</div>
-            <div>
-              <h4><span data-lang="de">Flexibilität</span><span data-lang="en">Flexibility</span></h4>
-              <p>
-                <span data-lang="de">Jede Leuchte individuell konfigurierbar. Kein Projekt ist wie das andere – wir passen uns Ihren Anforderungen an, nicht andersherum.</span>
-                <span data-lang="en">Every luminaire individually configurable. No project is like another – we adapt to your requirements, not the other way around.</span>
-              </p>
-            </div>
-          </div>
-          <div class="value-item">
-            <div class="value-num">04</div>
-            <div>
-              <h4>Made in Germany</h4>
-              <p>
-                <span data-lang="de">Produktion in Lemgo, Deutschland. Regionale Wertschöpfung, kurze Lieferwege und Verantwortung für unsere Region.</span>
-                <span data-lang="en">Production in Lemgo, Germany. Regional value creation, short supply chains and responsibility for our region.</span>
-              </p>
-            </div>
-          </div>
+      <div class="service-item fade-in fade-in-delay-1" style="border:2px solid var(--cold);">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Location -->
-<section class="section">
-  <div class="container">
-    <div class="about-split">
-      <div class="about-visual fade-in" style="background:linear-gradient(135deg,#e0eaf0,#d0dde8);">
-        <span class="about-visual-icon">📍</span>
-      </div>
-      <div class="fade-in fade-in-delay-1">
-        <span class="label" style="display:block;margin-bottom:1rem;">
-          <span data-lang="de">Unser Standort</span>
-          <span data-lang="en">Our Location</span>
-        </span>
-        <h2>Lemgo, Deutschland</h2>
-        <div class="divider"></div>
-        <p style="color:var(--text-secondary);font-size:.95rem;font-weight:300;line-height:1.8;margin-bottom:1.25rem;">
-          <span data-lang="de">Lemgo, im Herzen Ostwestfalens gelegen, ist nicht nur unser Produktionsstandort – es ist unser Zuhause. In dieser Region, bekannt für ihre Industrietradition und Innovationskraft, wurzeln unsere Werte und unser Qualitätsanspruch.</span>
-          <span data-lang="en">Lemgo, located in the heart of East Westphalia, is not only our production site – it's our home. In this region, known for its industrial tradition and innovative power, our values and quality standards are rooted.</span>
+        <h3>
+          <span data-lang="de">02 · Nachhaltigkeit</span>
+          <span data-lang="en">02 · Sustainability</span>
+        </h3>
+        <p>
+          <span data-lang="de">Ressourcenschonendes Denken vom Design bis zur Entsorgung. Leuchtensanierung statt Neukauf – das Innenleben wechselt, der Korpus bleibt.</span>
+          <span data-lang="en">Resource-conscious thinking from design to disposal. Luminaire renovation instead of replacement – the inside changes, the housing remains.</span>
         </p>
-        <p style="color:var(--text-secondary);font-size:.95rem;font-weight:300;line-height:1.8;margin-bottom:2rem;">
-          <span data-lang="de">Von Lemgo aus beliefern wir Kunden weltweit – von Berliner Universitäten bis zu sakralen Stätten in Jerusalem und renommierten Museen in London.</span>
-          <span data-lang="en">From Lemgo, we supply customers worldwide – from Berlin universities to sacred sites in Jerusalem and renowned museums in London.</span>
-        </p>
-        <a href="kontakt.html" class="btn btn-primary">
-          <span data-lang="de">Uns besuchen</span>
-          <span data-lang="en">Visit us</span>
-          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" style="width:16px;height:16px;">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- Philosophy Quote full width -->
-<section class="philosophy section">
-  <div class="container">
-    <div style="max-width:760px;margin:0 auto;text-align:center;" class="fade-in">
-      <span class="label" style="display:block;margin-bottom:1.5rem;">
-        <span data-lang="de">Unser Credo</span>
-        <span data-lang="en">Our Credo</span>
-      </span>
-      <blockquote style="font-size:clamp(1.6rem,3vw,2.6rem);">
-        <span data-lang="de">„Nicht unsere Leuchte bestimmt Ihre Planung –<br>sondern umgekehrt."</span>
-        <span data-lang="en">"Not our luminaire determines your planning –<br>but the other way around."</span>
-        <cite style="text-align:center;">Kotzolt International GmbH</cite>
-      </blockquote>
+      <div class="service-item fade-in fade-in-delay-2" style="border:2px solid var(--cold);">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>
+          <span data-lang="de">03 · Flexibilität</span>
+          <span data-lang="en">03 · Flexibility</span>
+        </h3>
+        <p>
+          <span data-lang="de">Jede Leuchte individuell konfigurierbar. Kein Projekt ist wie das andere – wir passen uns Ihren Anforderungen an, nicht andersherum.</span>
+          <span data-lang="en">Every luminaire individually configurable. No project is like another – we adapt to your requirements, not the other way around.</span>
+        </p>
+      </div>
+
+      <div class="service-item fade-in fade-in-delay-3" style="border:2px solid var(--cold);">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </div>
+        <h3>04 · Made in Germany</h3>
+        <p>
+          <span data-lang="de">Produktion in Lemgo, Deutschland. Regionale Wertschöpfung, kurze Lieferwege und Verantwortung für unsere Region.</span>
+          <span data-lang="en">Production in Lemgo, Germany. Regional value creation, short supply chains and responsibility for our region.</span>
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- Karriere -->
-<section class="section" style="background:var(--bg-warm);">
+<section class="section">
   <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
     <span class="label fade-in" style="display:block;margin-bottom:1rem;">
       <span data-lang="de">Karriere</span>
@@ -244,13 +311,44 @@
     <a href="kontakt.html" class="btn btn-primary fade-in fade-in-delay-3">
       <span data-lang="de">Initiativbewerbung senden</span>
       <span data-lang="en">Send speculative application</span>
-      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" style="width:16px;height:16px;">
-        <path d="M5 12h14M12 5l7 7-7 7"/>
-      </svg>
+      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
 </section>
 
+<!-- CTA Banner -->
+<section class="cta-banner section">
+  <div class="cta-banner-bg" data-parallax="0.3" style="background-image:url('https://kotzolt.com/wp-content/uploads/2024/08/Stadtwerke_Neubrandenburg-1500x430.jpg');"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="cta-banner-border"></div>
+  <div class="container cta-banner-content">
+    <span class="label fade-in" style="color:var(--cold-pale);">
+      <span data-lang="de">Ihr Lichtprojekt</span>
+      <span data-lang="en">Your lighting project</span>
+    </span>
+    <h2 class="fade-in fade-in-delay-1" style="color:var(--white);">
+      <span data-lang="de">Bereit, Räume zu verwandeln?</span>
+      <span data-lang="en">Ready to transform spaces?</span>
+    </h2>
+    <p class="fade-in fade-in-delay-2" style="color:rgba(255,255,255,.65);max-width:480px;margin:0 auto 2rem;">
+      <span data-lang="de">Sprechen Sie mit unseren Lichtexperten – wir finden gemeinsam die perfekte Lösung.</span>
+      <span data-lang="en">Talk to our lighting experts – together we'll find the perfect solution.</span>
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="fade-in fade-in-delay-3">
+      <a href="kontakt.html" class="btn btn-gold">
+        <span data-lang="de">Jetzt anfragen</span>
+        <span data-lang="en">Get in touch</span>
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="produkte.html" class="btn" style="border:2px solid rgba(90,137,168,.5);color:rgba(255,255,255,.8);">
+        <span data-lang="de">Alle Produkte</span>
+        <span data-lang="en">All products</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -259,10 +357,10 @@
         <div class="logo-sub">International GmbH</div>
         <p><span data-lang="de">Hersteller von hochwertiger Beleuchtung und individuellen Lichtlösungen. Made in Germany.</span><span data-lang="en">Manufacturer of high-quality lighting and individual light solutions. Made in Germany.</span></p>
         <div class="footer-social">
-          <a href="#" class="social-icon">in</a>
-          <a href="#" class="social-icon">Li</a>
-          <a href="#" class="social-icon">▶</a>
-          <a href="#" class="social-icon">P</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
+          <a href="https://www.youtube.com/@kotzolt6738" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">▶</a>
+          <a href="#" class="social-icon" aria-label="Pinterest">P</a>
         </div>
       </div>
       <div class="footer-col">
@@ -273,6 +371,7 @@
           <li><a href="produkte.html">Aures</a></li>
           <li><a href="produkte.html">UFO</a></li>
           <li><a href="produkte.html">Evolution</a></li>
+          <li><a href="produkte.html">Pictura</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -281,6 +380,7 @@
           <li><a href="ueber-uns.html"><span data-lang="de">Über uns</span><span data-lang="en">About us</span></a></li>
           <li><a href="leistungen.html"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a></li>
           <li><a href="referenzen.html"><span data-lang="de">Referenzen</span><span data-lang="en">References</span></a></li>
+          <li><a href="kontakt.html"><span data-lang="de">Karriere</span><span data-lang="en">Careers</span></a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -288,6 +388,8 @@
         <ul>
           <li><a href="kontakt.html">Lemgo, Deutschland</a></li>
           <li><a href="kontakt.html"><span data-lang="de">Projektanfrage</span><span data-lang="en">Project inquiry</span></a></li>
+          <li><a href="kontakt.html">Newsletter</a></li>
+          <li><a href="#">WhatsApp</a></li>
         </ul>
       </div>
     </div>
